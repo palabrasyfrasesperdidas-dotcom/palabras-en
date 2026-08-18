@@ -15,23 +15,9 @@
             flex-direction: column;
             align-items: center;
         }
-        h1 {
-            margin-bottom: 5px;
-            text-align: center;
-        }
-        p.subtitle {
-            color: #aaaaaa;
-            margin-top: 0;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .nav-container {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+        h1 { margin-bottom: 5px; text-align: center; }
+        p.subtitle { color: #aaaaaa; margin-top: 0; margin-bottom: 20px; text-align: center; }
+        .nav-container { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; justify-content: center; }
         select, button {
             background-color: #1e1e1e;
             color: #ffffff;
@@ -40,30 +26,10 @@
             border-radius: 4px;
             cursor: pointer;
         }
-        button:hover, select:hover {
-            background-color: #333;
-        }
-        .content-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
-        }
-        img, video {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-            margin-bottom: 15px;
-        }
-        .frase-box {
-            font-size: 1.1em;
-            line-height: 1.5;
-            color: #e0e0e0;
-            min-height: 60px;
-        }
+        button:hover, select:hover { background-color: #333; }
+        .content-container { display: flex; flex-direction: column; align-items: center; max-width: 600px; width: 100%; text-align: center; }
+        img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); margin-bottom: 15px; }
+        .frase-box { font-size: 1.1em; line-height: 1.5; color: #e0e0e0; min-height: 80px; padding: 10px; }
     </style>
 </head>
 <body>
@@ -81,85 +47,79 @@
         </select>
         <button onclick="prevBlock()">← Previous</button>
         <button onclick="nextBlock()">Next →</button>
-        <button onclick="randomPhrase()">🎲 Random</button>
     </div>
 
     <div class="content-container">
-        <div id="mediaContainer">
-            <!-- Se cargará la imagen o vídeo dinámicamente -->
-        </div>
-        <div class="frase-box" id="fraseBox">
-            Loading phrases...
-        </div>
+        <div id="mediaContainer"></div>
+        <div class="frase-box" id="fraseBox">Loading phrases...</div>
     </div>
 
     <script>
         let frasesData = [];
         let currentBlock = 1;
+        let currentIndexInBlock = 0; 
 
         async function loadData() {
             try {
                 const response = await fetch('frases.json');
                 frasesData = await response.json();
-                updateView();
+                updateView(true);
             } catch (error) {
                 document.getElementById('fraseBox').innerText = "Error loading phrases.";
-                console.error(error);
             }
         }
 
-        function updateView() {
+        function updateView(isNewBlock = false) {
             currentBlock = parseInt(document.getElementById('blockSelect').value);
-            
-            // Actualizar multimedia (buscando la nomenclatura _en)
-            const mediaContainer = document.getElementById('mediaContainer');
-            mediaContainer.innerHTML = `
-                <img src="plantilla${currentBlock}_en.png" alt="Template ${currentBlock}" onerror="this.onerror=null; this.src='plantilla${currentBlock}_en.jpg';">
-            `;
+            if (isNewBlock) currentIndexInBlock = 0;
 
-            // Filtrar frases del bloque actual
+            const mediaContainer = document.getElementById('mediaContainer');
+            mediaContainer.innerHTML = `<img src="plantilla${currentBlock}_en.png" alt="Template ${currentBlock}">`;
+
             const filteredPhrases = frasesData.filter(f => f.bloque === currentBlock);
             const fraseBox = document.getElementById('fraseBox');
 
             if (filteredPhrases.length > 0) {
-                // Mostrar aleatoria o la primera del bloque
-                const randomF = filteredPhrases[Math.floor(Math.random() * filteredPhrases.length)];
-                fraseBox.innerHTML = `<strong>Footprint ${randomF.id}</strong> — ${randomF.texto}`;
+                const frase = filteredPhrases[currentIndexInBlock];
+                fraseBox.innerHTML = `<strong>Footprint ${frase.id}</strong> — ${frase.texto}`;
             } else {
-                fraseBox.innerText = "No phrases available for this block yet.";
+                fraseBox.innerText = "No phrases available for this block.";
             }
         }
 
-        function changeBlock() {
-            updateView();
-        }
+        function changeBlock() { updateView(true); }
 
         function nextBlock() {
-            const select = document.getElementById('blockSelect');
-            if (select.selectedIndex < select.options.length - 1) {
-                select.selectedIndex++;
-                updateView();
+            const filteredPhrases = frasesData.filter(f => f.bloque === currentBlock);
+            if (currentIndexInBlock < filteredPhrases.length - 1) {
+                currentIndexInBlock++;
+            } else {
+                const select = document.getElementById('blockSelect');
+                if (select.selectedIndex < select.options.length - 1) {
+                    select.selectedIndex++;
+                    updateView(true);
+                    return;
+                }
             }
+            updateView(false);
         }
 
         function prevBlock() {
-            const select = document.getElementById('blockSelect');
-            if (select.selectedIndex > 0) {
-                select.selectedIndex--;
-                updateView();
+            if (currentIndexInBlock > 0) {
+                currentIndexInBlock--;
+            } else {
+                const select = document.getElementById('blockSelect');
+                if (select.selectedIndex > 0) {
+                    select.selectedIndex--;
+                    const prevPhrases = frasesData.filter(f => f.bloque === parseInt(document.getElementById('blockSelect').options[select.selectedIndex].value));
+                    currentIndexInBlock = prevPhrases.length - 1;
+                    updateView(false);
+                    return;
+                }
             }
+            updateView(false);
         }
 
-        function randomPhrase() {
-            if (frasesData.length === 0) return;
-            const randomF = frasesData[Math.floor(Math.random() * frasesData.length)];
-            document.getElementById('blockSelect').value = randomF.bloque;
-            updateView();
-            // Sobrescribir con la frase específica elegida aleatoriamente de todo el set
-            document.getElementById('fraseBox').innerHTML = `<strong>Footprint ${randomF.id}</strong> — ${randomF.texto}`;
-        }
-
-        // Cargar al iniciar
         loadData();
     </script>
 </body>
