@@ -132,7 +132,7 @@
             videoElement.load();
             videoElement.play().catch(e => console.log("Auto-play prevented:", e));
 
-            const filteredPhrases = frasesData.filter(f => f.bloque === currentBlock);
+            const filteredPhrases = frasesData.filter(f => Number(f.bloque) === Number(currentBlock));
             const fraseBox = document.getElementById('fraseBox');
             const counterBox = document.getElementById('counterBox');
 
@@ -147,21 +147,20 @@
         }
 
         function changeBlock() { 
-            // Capturamos correctamente el valor seleccionado en el desplegable
             const select = document.getElementById('blockSelect');
-            currentBlock = parseInt(select.value);
+            currentBlock = parseInt(select.value, 10);
             updateView(true); 
         }
 
         function nextBlock() {
-            const filteredPhrases = frasesData.filter(f => f.bloque === currentBlock);
+            const filteredPhrases = frasesData.filter(f => Number(f.bloque) === Number(currentBlock));
             if (currentIndexInBlock < filteredPhrases.length - 1) {
                 currentIndexInBlock++;
             } else {
                 let select = document.getElementById('blockSelect');
                 if (select.selectedIndex < select.options.length - 1) {
                     select.selectedIndex++;
-                    currentBlock = parseInt(select.value);
+                    currentBlock = parseInt(select.value, 10);
                     updateView(true);
                     return;
                 }
@@ -176,8 +175,8 @@
                 let select = document.getElementById('blockSelect');
                 if (select.selectedIndex > 0) {
                     select.selectedIndex--;
-                    currentBlock = parseInt(select.value);
-                    const prevPhrases = frasesData.filter(f => f.bloque === currentBlock);
+                    currentBlock = parseInt(select.value, 10);
+                    const prevPhrases = frasesData.filter(f => Number(f.bloque) === Number(currentBlock));
                     currentIndexInBlock = prevPhrases.length - 1;
                     select.value = currentBlock;
                     updateView(false);
@@ -192,10 +191,10 @@
             const randomIndex = Math.floor(Math.random() * frasesData.length);
             const randomItem = frasesData[randomIndex];
             
-            currentBlock = randomItem.bloque;
+            currentBlock = Number(randomItem.bloque);
             document.getElementById('blockSelect').value = currentBlock;
 
-            const filteredPhrases = frasesData.filter(f => f.bloque === currentBlock);
+            const filteredPhrases = frasesData.filter(f => Number(f.bloque) === Number(currentBlock));
             currentIndexInBlock = filteredPhrases.findIndex(f => f.id === randomItem.id);
             if (currentIndexInBlock === -1) currentIndexInBlock = 0;
 
