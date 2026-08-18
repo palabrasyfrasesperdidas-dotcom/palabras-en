@@ -38,7 +38,8 @@
     <p class="subtitle">Collection of footprints and reflections</p>
 
     <div class="nav-container">
-        <button onclick="window.location.href='https://palabrasyfrasesperdidas-dotcom.github.io/palabras-es/'">🏠 Home (ES)</button>
+        <!-- Cambiado para que vaya al índice general o página de introducción deseada -->
+        <button onclick="window.location.href='https://palabrasyfrasesperdidas-dotcom.github.io/'">🏠 Home (Intro)</button>
         <select id="blockSelect" onchange="changeBlock()">
             <option value="1">Block 1: Geometry of Destiny</option>
             <option value="2">Block 2: Footprints of Time</option>
@@ -61,11 +62,16 @@
 
         async function loadData() {
             try {
-                const response = await fetch('frases.json');
+                // Corregido a 'frases_en.json' (o asegúrate de que el archivo JSON en este directorio se llame así)
+                const response = await fetch('frases_en.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
                 frasesData = await response.json();
                 updateView(true);
             } catch (error) {
-                document.getElementById('fraseBox').innerText = "Error loading phrases.";
+                console.error("Error loading phrases:", error);
+                document.getElementById('fraseBox').innerText = "Error loading phrases. Please check if frases_en.json exists.";
             }
         }
 
