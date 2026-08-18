@@ -27,9 +27,52 @@
             cursor: pointer;
         }
         button:hover, select:hover { background-color: #333; }
-        .content-container { display: flex; flex-direction: column; align-items: center; max-width: 600px; width: 100%; text-align: center; }
-        video { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); margin-bottom: 15px; }
-        .frase-box { font-size: 1.1em; line-height: 1.5; color: #e0e0e0; min-height: 80px; padding: 10px; }
+        
+        /* Contenedor principal que permite superponer el texto sobre el vídeo igual que en español */
+        .card-container {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            margin-bottom: 10px;
+        }
+        .card-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Texto superpuesto sobre el vídeo */
+        .text-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            box-sizing: border-box;
+            color: #ffffff;
+            pointer-events: none;
+        }
+        .text-overlay p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+            margin: 0;
+        }
+        
+        .counter-info {
+            color: #aaaaaa;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
@@ -38,7 +81,7 @@
     <p class="subtitle">Collection of footprints and reflections</p>
 
     <div class="nav-container">
-        <button onclick="window.location.href='https://palabrasyfrasesperdidas-dotcom.github.io/palabrasyfrasesperdidas/'">🏠 Home (Intro)</button>
+        <button onclick="window.location.href='https://palabrasyfrasesperdidas-dotcom.github.io/palabrasyfrasesperdidas/'">🏠 Home</button>
         <select id="blockSelect" onchange="changeBlock()">
             <option value="1">Block 1: Geometry of Destiny</option>
             <option value="2">Block 2: Footprints of Time</option>
@@ -47,11 +90,20 @@
         </select>
         <button onclick="prevBlock()">← Previous</button>
         <button onclick="nextBlock()">Next →</button>
+        <button onclick="randomPhrase()">🎲 Random</button>
     </div>
 
-    <div class="content-container">
-        <div id="mediaContainer"></div>
-        <div class="frase-box" id="fraseBox">Loading phrases...</div>
+    <div class="content-container" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <div class="card-container">
+            <video id="bgVideo" autoplay muted loop playsinline>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="text-overlay">
+                <p id="fraseBox">Loading phrases...</p>
+            </div>
+        </div>
+        <div class="counter-info" id="counterBox"></div>
     </div>
 
     <script>
@@ -69,7 +121,7 @@
                 updateView(true);
             } catch (error) {
                 console.error("Error loading phrases:", error);
-                document.getElementById('fraseBox').innerText = "Error loading phrases. Please check if frases_en.json exists.";
+                document.getElementById('fraseBox').innerText = "Error loading phrases.";
             }
         }
 
@@ -77,38 +129,40 @@
             currentBlock = parseInt(document.getElementById('blockSelect').value);
             if (isNewBlock) currentIndexInBlock = 0;
 
-            const mediaContainer = document.getElementById('mediaContainer');
-            // Usamos la etiqueta video apuntando al archivo .mp4 correspondiente de la plantilla
-            mediaContainer.innerHTML = `
-                <video autoplay muted loop playsinline>
-                    <source src="plantilla${currentBlock}_video_en.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            `;
+            // Actualizar el vídeo del bloque correspondiente
+            const videoElement = document.getElementById('bgVideo');
+            videoElement.src = `plantilla${currentBlock}_video_en.mp4`;
+            videoElement.load();
+            videoElement.play().catch(e => console.log("Auto-play prevented:", e));
 
             const filteredPhrases = frasesData.filter(f => f.bloque === currentBlock);
             const fraseBox = document.getElementById('fraseBox');
+            const counterBox = document.getElementById('counterBox');
 
             if (filteredPhrases.length > 0) {
                 const frase = filteredPhrases[currentIndexInBlock];
-                // Comprobamos si el texto ya incluye la palabra Footprint para no duplicarla
-                let textoFrase = frase.texto;
-                fraseBox.innerHTML = `<strong>Footprint ${frase.id}</strong> — ${textoFrase}`;
+                fraseBox.innerText = `"${frase.texto}"`;
+                counterBox.innerText = `Footprint ${frase.id} (${currentIndexInBlock + 1} / ${filteredPhrases.length})`;
             } else {
                 fraseBox.innerText = "No phrases available for this block.";
+                counterBox.innerText = "";
             }
         }
 
-        function changeBlock() { updateView(true); }
+        function changeBlock() { 
+            document.getElementById('blockSelect').value = currentBlock;
+            updateView(true); 
+        }
 
         function nextBlock() {
             const filteredPhrases = frasesData.filter(f => f.bloque === currentBlock);
             if (currentIndexInBlock < filteredPhrases.length - 1) {
                 currentIndexInBlock++;
             } else {
-                const select = document.getElementById('blockSelect');
+                let select = document.getElementById('blockSelect');
                 if (select.selectedIndex < select.options.length - 1) {
                     select.selectedIndex++;
+                    currentBlock = parseInt(select.value);
                     updateView(true);
                     return;
                 }
@@ -120,15 +174,32 @@
             if (currentIndexInBlock > 0) {
                 currentIndexInBlock--;
             } else {
-                const select = document.getElementById('blockSelect');
+                let select = document.getElementById('blockSelect');
                 if (select.selectedIndex > 0) {
                     select.selectedIndex--;
-                    const prevPhrases = frasesData.filter(f => f.bloque === parseInt(document.getElementById('blockSelect').options[select.selectedIndex].value));
+                    currentBlock = parseInt(select.value);
+                    const prevPhrases = frasesData.filter(f => f.bloque === currentBlock);
                     currentIndexInBlock = prevPhrases.length - 1;
+                    document.getElementById('blockSelect').value = currentBlock;
                     updateView(false);
                     return;
                 }
             }
+            updateView(false);
+        }
+
+        function randomPhrase() {
+            if (frasesData.length === 0) return;
+            const randomIndex = Math.floor(Math.random() * frasesData.length);
+            const randomItem = frasesData[randomIndex];
+            
+            currentBlock = randomItem.bloque;
+            document.getElementById('blockSelect').value = currentBlock;
+
+            const filteredPhrases = frasesData.filter(f => f.bloque === currentBlock);
+            currentIndexInBlock = filteredPhrases.findIndex(f => f.id === randomItem.id);
+            if (currentIndexInBlock === -1) currentIndexInBlock = 0;
+
             updateView(false);
         }
 
