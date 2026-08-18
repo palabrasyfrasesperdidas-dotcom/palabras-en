@@ -1,562 +1,326 @@
 [
-  {
-    "id": 1,
-    "bloque": 1,
-    "texto": "We are destinies entwined, bound to cross on paths aligned."
-  },
-  {
-    "id": 2,
-    "bloque": 1,
-    "texto": "Life lays roads before our eyes; our minds build mazes in disguise."
-  },
-  {
-    "id": 3,
-    "bloque": 1,
-    "texto": "If our dreams remain unlived, it is the fear of life we give."
-  },
-  {
-    "id": 4,
-    "bloque": 1,
-    "texto": "The hardest choice is not among many trails, but finding a new path when every old one fails."
-  },
-  {
-    "id": 5,
-    "bloque": 1,
-    "texto": "Time rolls the dice upon the board; we are the pawns, our end ignored."
-  },
-  {
-    "id": 6,
-    "bloque": 1,
-    "texto": "The earth is round so wherever we roam, our dreams will find a place called home."
-  },
-  {
-    "id": 7,
-    "bloque": 1,
-    "texto": "Never forget the place of birth; all that matters is how we walked this earth."
-  },
-  {
-    "id": 8,
-    "bloque": 1,
-    "texto": "It is fine to feel astray; each dawn is a route we discover each day."
-  },
-  {
-    "id": 9,
-    "bloque": 1,
-    "texto": "So many trains have passed me by, I learned to walk beneath the sky."
-  },
-  {
-    "id": 10,
-    "bloque": 1,
-    "texto": "To live is to pretend we know where we head, unaware of the winding path ahead."
-  },
-  {
-    "id": 11,
-    "bloque": 1,
-    "texto": "Those who felt no fear to start anew, found horizons fresh and true."
-  },
-  {
-    "id": 12,
-    "bloque": 1,
-    "texto": "We are paths that meet and cross, then part ways with gain or loss."
-  },
-  {
-    "id": 13,
-    "bloque": 1,
-    "texto": "Life moves fast and changes course; we hold the wheel and guide its force."
-  },
-  {
-    "id": 14,
-    "bloque": 1,
-    "texto": "If the moon through clouds still shines above, never give up on the dreams you love."
-  },
-  {
-    "id": 15,
-    "bloque": 1,
-    "texto": "The future holds a promised scheme, but the present is reality, not a dream."
-  },
-  {
-    "id": 16,
-    "bloque": 1,
-    "texto": "On any journey, leave heavy bags behind; choose true souls for peace of mind."
-  },
-  {
-    "id": 17,
-    "bloque": 1,
-    "texto": "Your destiny will ever be, the place where you are held in high degree."
-  },
-  {
-    "id": 18,
-    "bloque": 1,
-    "texto": "We choose to let our failures break our heart, or make them lessons where new victories start."
-  },
-  {
-    "id": 19,
-    "bloque": 1,
-    "texto": "You are the journey you design; you are your own destined line."
-  },
-  {
-    "id": 20,
-    "bloque": 1,
-    "texto": "If Friday is where you long to be, set off today across the sea."
-  },
-  {
-    "id": 21,
-    "bloque": 1,
-    "texto": "We worry where our steps will fall, yet life unfolds beyond it all."
-  },
-  {
-    "id": 22,
-    "bloque": 1,
-    "texto": "The worst roads are not those walked in error, but those left unseen through fear and terror."
-  },
-  {
-    "id": 23,
-    "bloque": 1,
-    "texto": "Awaiting tomorrow while living today, steals the sweet moments that slip away."
-  },
-  {
-    "id": 24,
-    "bloque": 1,
-    "texto": "We trace the paths where we will go, whenever we dream of the souls we'll know."
-  },
-  {
-    "id": 25,
-    "bloque": 1,
-    "texto": "We are rivers flowing to the sea, reaching the end of our history."
-  },
-  {
-    "id": 26,
-    "bloque": 1,
-    "texto": "If every fall makes us give up the fight, we'll never see our fate in light."
-  },
-  {
-    "id": 27,
-    "bloque": 1,
-    "texto": "Remember well as time moves on: each step we take is a mark left upon."
-  },
-  {
-    "id": 28,
-    "bloque": 1,
-    "texto": "If death is the ultimate place to arrive, life is the journey while we are alive."
-  },
-  {
-    "id": 29,
-    "bloque": 1,
-    "texto": "Stones lie on roads both far and near; cowards weep, but the brave persevere."
-  },
-  {
-    "id": 30,
-    "bloque": 1,
-    "texto": "Life isn't measured in months or years; a single second shifts our tears."
-  },
-  {
-    "id": 31,
-    "bloque": 1,
-    "texto": "Though heavy storms the present bring, trust the future and the light of spring."
-  },
-  {
-    "id": 32,
-    "bloque": 1,
-    "texto": "If yesterday seems bright and sweet, ask if today makes your life complete."
-  },
-  {
-    "id": 33,
-    "bloque": 1,
-    "texto": "Two paths remain: to stand and fight, or weep in vain throughout the night."
-  },
-  {
-    "id": 34,
-    "bloque": 1,
-    "texto": "We are the sum of heart and mind; in their deep paths we get lost or aligned."
-  },
-  {
-    "id": 35,
-    "bloque": 1,
-    "texto": "We may not choose the cards we hold, but we choose the grace as our lives unfold."
-  },
-  {
-    "id": 36,
-    "bloque": 1,
-    "texto": "To live is to choose, day by day, which open road will guide our way."
-  },
-  {
-    "id": 37,
-    "bloque": 1,
-    "texto": "Though the road seems tough and steep, keep walking forward, the rewards you'll reap."
-  },
-  {
-    "id": 38,
-    "bloque": 1,
-    "texto": "Our destiny is not to hold or know, but to learn to love and let it grow."
-  },
-  {
-    "id": 39,
-    "bloque": 1,
-    "texto": "Though you choose the road you walk upon, destiny decides where you belong."
-  },
-  {
-    "id": 40,
-    "bloque": 1,
-    "texto": "Though I may not be where your journey ends, I dream of walking beside you as friends."
-  },
-  {
-    "id": 41,
-    "bloque": 1,
-    "texto": "Though our final goal remains unseen, we'll reach a place where we've never been."
-  },
-  {
-    "id": 42,
-    "bloque": 1,
-    "texto": "Fight your fate and change the tide; accept it blindly and suffer inside."
-  },
-  {
-    "id": 43,
-    "bloque": 1,
-    "texto": "We can read our fate upon the page, or write our story on the stage."
-  },
-  {
-    "id": 44,
-    "bloque": 1,
-    "texto": "Fear not the rocks along the trail; with courage high, you shall prevail."
-  },
-  {
-    "id": 45,
-    "bloque": 1,
-    "texto": "We may not gain all that we claim, but we can fight to reach our aim."
-  },
-  {
-    "id": 46,
-    "bloque": 1,
-    "texto": "Heroes are not born from winning the prize, but from fighting on beneath the skies."
-  },
-  {
-    "id": 47,
-    "bloque": 1,
-    "texto": "Only those who fight win the night; those who surrender miss the light."
-  },
-  {
-    "id": 48,
-    "bloque": 1,
-    "texto": "The mind finds excuses to delay, yet finds a way when the heart leads the way."
-  },
-  {
-    "id": 49,
-    "bloque": 1,
-    "texto": "We feel like prisoners bound in place, forgetting we locked our own cell space."
-  },
-  {
-    "id": 50,
-    "bloque": 1,
-    "texto": "Save some applause for those unsung, the silent heroes who died young."
-  },
-  {
-    "id": 51,
-    "bloque": 1,
-    "texto": "Let us be destiny, bright and clear; or quiet silence as our paths draw near."
-  },
-  {
-    "id": 52,
-    "bloque": 1,
-    "texto": "If you walk not by my side today, dream not of destiny along the way."
-  },
-  {
-    "id": 53,
-    "bloque": 1,
-    "texto": "We walked together when spark met spark, and kept on going through the dark."
-  },
-  {
-    "id": 54,
-    "bloque": 1,
-    "texto": "We write the present while we live, and read the past in what we give."
-  },
-  {
-    "id": 55,
-    "bloque": 1,
-    "texto": "The end of a road where shadows fall, is a new journey answering its call."
-  },
-  {
-    "id": 56,
-    "bloque": 1,
-    "texto": "Few understand that life is the stream, the journey itself, not the ultimate dream."
-  },
-  {
-    "id": 57,
-    "bloque": 1,
-    "texto": "Nothing is written in fate above; life awaits the words of our love."
-  },
-  {
-    "id": 58,
-    "bloque": 1,
-    "texto": "We know the haven we wish to reach, but planning forever leaves us on the beach."
-  },
-  {
-    "id": 59,
-    "bloque": 1,
-    "texto": "The present moment you now hold, is the future you awaited, bright and bold."
-  },
-  {
-    "id": 60,
-    "bloque": 1,
-    "texto": "Where we have been matters no more; what counts is the future at our door."
-  },
-  {
-    "id": 61,
-    "bloque": 1,
-    "texto": "Your destiny is never set in stone; you write each line as you walk alone."
-  },
-  {
-    "id": 62,
-    "bloque": 1,
-    "texto": "Life is a voyage sweet or grim, defined by companions and choices within."
-  },
-  {
-    "id": 63,
-    "bloque": 1,
-    "texto": "The hours wasted while we wait, are lost forever to our fate."
-  },
-  {
-    "id": 64,
-    "bloque": 1,
-    "texto": "We have one single day to die, but all our days to touch the sky."
-  },
-  {
-    "id": 65,
-    "bloque": 1,
-    "texto": "We cannot foresee the mistakes ahead, but wise choices today clear the path we tread."
-  },
-  {
-    "id": 66,
-    "bloque": 1,
-    "texto": "Ponder what remains when life is past, to know if this living is built to last."
-  },
-  {
-    "id": 67,
-    "bloque": 1,
-    "texto": "The distant future for which you prayed, is now the present you have made."
-  },
-  {
-    "id": 68,
-    "bloque": 1,
-    "texto": "Not luck, but choices shape our story, bringing regret or triumph's glory."
-  },
-  {
-    "id": 69,
-    "bloque": 1,
-    "texto": "Remember life takes a breath to start, and an instant can break it all apart."
-  },
-  {
-    "id": 70,
-    "bloque": 1,
-    "texto": "Why waste our thoughts on where we'll be? Look at the past and set present free."
-  },
-  {
-    "id": 71,
-    "bloque": 1,
-    "texto": "Tomorrow may bring a brighter sun, but never worse than what is done."
-  },
-  {
-    "id": 72,
-    "bloque": 1,
-    "texto": "Coincidences rarely show, and second chances seldom grow."
-  },
-  {
-    "id": 73,
-    "bloque": 1,
-    "texto": "Losers chase chances that fade away; winners build wealth from the dark and gray."
-  },
-  {
-    "id": 74,
-    "bloque": 1,
-    "texto": "Destiny whispers: a smile to share, a dream to live, and a life to dare."
-  },
-  {
-    "id": 75,
-    "bloque": 1,
-    "texto": "We all have dreams beneath the night, but wake we must to face the light."
-  },
-  {
-    "id": 76,
-    "bloque": 1,
-    "texto": "We value time so little now, then mourn its loss with furrowed brow."
-  },
-  {
-    "id": 77,
-    "bloque": 1,
-    "texto": "True joy is found when we understand: lived moments remain, not wealth in hand."
-  },
-  {
-    "id": 78,
-    "bloque": 1,
-    "texto": "If you stand today where you never planned, why worry where tomorrow lands?"
-  },
-  {
-    "id": 79,
-    "bloque": 1,
-    "texto": "From what I lived, I learned to see; in what comes next, I'll set me free."
-  },
-  {
-    "id": 80,
-    "bloque": 1,
-    "texto": "Never regret the path you took; every step was a lesson in life's book."
-  },
-  {
-    "id": 81,
-    "bloque": 1,
-    "texto": "Life will not pause or wait for you; go live it now, or it passes through."
-  },
-  {
-    "id": 82,
-    "bloque": 1,
-    "texto": "Though sad conclusions bring us tears, they open doors to brighter years."
-  },
-  {
-    "id": 83,
-    "bloque": 1,
-    "texto": "It makes no sense to mourn the dead, if while alive no words were said."
-  },
-  {
-    "id": 84,
-    "bloque": 1,
-    "texto": "Empty we came, empty we go; only lived moments remain below."
-  },
-  {
-    "id": 85,
-    "bloque": 1,
-    "texto": "Time is a treasure we hoard in vain, spent the moment we remember pain."
-  },
-  {
-    "id": 86,
-    "bloque": 1,
-    "texto": "We think too much upon the floor, and end up nowhere as before."
-  },
-  {
-    "id": 87,
-    "bloque": 1,
-    "texto": "Joy is no final place to arrive; it is the spirit keeping us alive."
-  },
-  {
-    "id": 88,
-    "bloque": 1,
-    "texto": "Doubt where we stand, doubt where we go; but doubt not the worth of your inner glow."
-  },
-  {
-    "id": 89,
-    "bloque": 1,
-    "texto": "Others may make our days dark or bright, but only we choose to hold the light."
-  },
-  {
-    "id": 90,
-    "bloque": 1,
-    "texto": "All seek joy with restless mind, forgetting in peace is where we find."
-  },
-  {
-    "id": 91,
-    "bloque": 1,
-    "texto": "Living is simple: let coldness go, and learn from mistakes of long ago."
-  },
-  {
-    "id": 92,
-    "bloque": 1,
-    "texto": "We were not born to dream who we'll be, but to live our truth continuously."
-  },
-  {
-    "id": 93,
-    "bloque": 1,
-    "texto": "We all can find joy in what we hold, keeping hopes bright as stories unfold."
-  },
-  {
-    "id": 94,
-    "bloque": 1,
-    "texto": "Searching for joy can lead astray; true happiness lives in this moment today."
-  },
-  {
-    "id": 95,
-    "bloque": 1,
-    "texto": "Cherish what's yours, fight for your aim, and hold no regrets for choices you claim."
-  },
-  {
-    "id": 96,
-    "bloque": 1,
-    "texto": "Enjoy sweet moments while they last, before they fade into the past."
-  },
-  {
-    "id": 97,
-    "bloque": 1,
-    "texto": "Our life has one true goal above: to spend our days in joy and love."
-  },
-  {
-    "id": 98,
-    "bloque": 1,
-    "texto": "Dreams come in sleep when night is deep, but awake we must walk to hold what we keep."
-  },
-  {
-    "id": 99,
-    "bloque": 1,
-    "texto": "If we cannot rise to be our best, let us not sink beneath the rest."
-  },
-  {
-    "id": 100,
-    "bloque": 1,
-    "texto": "Though we seem alike beneath the sun, unique and rare is every one."
-  },
-  {
-    "id": 101,
-    "bloque": 1,
-    "texto": "The value of gifts is not the paper tied, but the warmth of love felt inside."
-  },
-  {
-    "id": 102,
-    "bloque": 1,
-    "texto": "You light my days and guide my way, whenever your eyes look my way."
-  },
-  {
-    "id": 103,
-    "bloque": 1,
-    "texto": "In past lives I searched for your grace; in this life I find your embrace."
-  },
-  {
-    "id": 104,
-    "bloque": 1,
-    "texto": "The footprints left upon the ground, are marks of dreams we sought and found."
-  },
-  {
-    "id": 105,
-    "bloque": 1,
-    "texto": "If tomorrow is unseen and the past is gone, live this moment until the dawn."
-  },
-  {
-    "id": 106,
-    "bloque": 1,
-    "texto": "In endless space we are a tiny dot; in vast time, a fleeting spot."
-  },
-  {
-    "id": 107,
-    "bloque": 1,
-    "texto": "Though you choose the path you tread, destiny seals where you are led."
-  },
-  {
-    "id": 108,
-    "bloque": 1,
-    "texto": "Fools seek the goal at journey's end; the wise love the road around the bend."
-  },
-  {
-    "id": 109,
-    "bloque": 1,
-    "texto": "Few comprehend this life we claim: the road is real, the goal a name."
-  },
-  {
-    "id": 110,
-    "bloque": 1,
-    "texto": "No traveler ever reached a shore, without departing from the door."
-  },
-  {
-    "id": 111,
-    "bloque": 1,
-    "texto": "Never step out just to search in vain; go forth to find and gain."
-  },
-  {
-    "id": 112,
-    "bloque": 1,
-    "texto": "When tired we rest our weary head, but awake we must live instead."
-  }
+  {"id": "Footprint 01", "bloque": 1, "texto": "We are destinies entwined, bound to cross on paths aligned."},
+  {"id": "Footprint 02", "bloque": 1, "texto": "Life lays roads before our eyes; our minds build mazes in disguise."},
+  {"id": "Footprint 03", "bloque": 1, "texto": "If our dreams remain unlived, it is the fear of life we give."},
+  {"id": "Footprint 04", "bloque": 1, "texto": "The hardest choice is not among many trails, but finding a new path when every old one fails."},
+  {"id": "Footprint 05", "bloque": 1, "texto": "Time rolls the dice upon the board; we are the pawns, our end ignored."},
+  {"id": "Footprint 06", "bloque": 1, "texto": "The earth is round so wherever we roam, our dreams will find a place called home."},
+  {"id": "Footprint 07", "bloque": 1, "texto": "Never forget the place of birth; all that matters is how we walked this earth."},
+  {"id": "Footprint 08", "bloque": 1, "texto": "It is fine to feel astray; each dawn is a route we discover each day."},
+  {"id": "Footprint 09", "bloque": 1, "texto": "So many trains have passed me by, I learned to walk beneath the sky."},
+  {"id": "Footprint 10", "bloque": 1, "texto": "To live is to pretend we know where we head, unaware of the winding path ahead."},
+  {"id": "Footprint 11", "bloque": 1, "texto": "Those who felt no fear to start anew, found horizons fresh and true."},
+  {"id": "Footprint 12", "bloque": 1, "texto": "We are paths that meet and cross, then part ways with gain or loss."},
+  {"id": "Footprint 13", "bloque": 1, "texto": "Life moves fast and changes course; we hold the wheel and guide its force."},
+  {"id": "Footprint 14", "bloque": 1, "texto": "If the moon through clouds still shines above, never give up on the dreams you love."},
+  {"id": "Footprint 15", "bloque": 1, "texto": "The future holds a promised scheme, but the present is reality, not a dream."},
+  {"id": "Footprint 16", "bloque": 1, "texto": "On any journey, leave heavy bags behind; choose true souls for peace of mind."},
+  {"id": "Footprint 17", "bloque": 1, "texto": "Your destiny will ever be, the place where you are held in high degree."},
+  {"id": "Footprint 18", "bloque": 1, "texto": "We choose to let our failures break our heart, or make them lessons where new victories start."},
+  {"id": "Footprint 19", "bloque": 1, "texto": "You are the journey you design; you are your own destined line."},
+  {"id": "Footprint 20", "bloque": 1, "texto": "If Friday is where you long to be, set off today across the sea."},
+  {"id": "Footprint 21", "bloque": 1, "texto": "We worry where our steps will fall, yet life unfolds beyond it all."},
+  {"id": "Footprint 22", "bloque": 1, "texto": "The worst roads are not those walked in error, but those left unseen through fear and terror."},
+  {"id": "Footprint 23", "bloque": 1, "texto": "Awaiting tomorrow while living today, steals the sweet moments that slip away."},
+  {"id": "Footprint 24", "bloque": 1, "texto": "We trace the paths where we will go, whenever we dream of the souls we'll know."},
+  {"id": "Footprint 25", "bloque": 1, "texto": "We are rivers flowing to the sea, reaching the end of our history."},
+  {"id": "Footprint 26", "bloque": 1, "texto": "If every fall makes us give up the fight, we'll never see our fate in light."},
+  {"id": "Footprint 27", "bloque": 1, "texto": "Remember well as time moves on: each step we take is a mark left upon."},
+  {"id": "Footprint 28", "bloque": 1, "texto": "If death is the ultimate place to arrive, life is the journey while we are alive."},
+  {"id": "Footprint 29", "bloque": 1, "texto": "Stones lie on roads both far and near; cowards weep, but the brave persevere."},
+  {"id": "Footprint 30", "bloque": 1, "texto": "Life isn't measured in months or years; a single second shifts our tears."},
+  {"id": "Footprint 31", "bloque": 1, "texto": "Though heavy storms the present bring, trust the future and the light of spring."},
+  {"id": "Footprint 32", "bloque": 1, "texto": "If yesterday seems bright and sweet, ask if today makes your life complete."},
+  {"id": "Footprint 33", "bloque": 1, "texto": "Two paths remain: to stand and fight, or weep in vain throughout the night."},
+  {"id": "Footprint 34", "bloque": 1, "texto": "We are the sum of heart and mind; in their deep paths we get lost or aligned."},
+  {"id": "Footprint 35", "bloque": 1, "texto": "We may not choose the cards we hold, but we choose the grace as our lives unfold."},
+  {"id": "Footprint 36", "bloque": 1, "texto": "To live is to choose, day by day, which open road will guide our way."},
+  {"id": "Footprint 37", "bloque": 1, "texto": "Though the road seems tough and steep, keep walking forward, the rewards you'll reap."},
+  {"id": "Footprint 38", "bloque": 1, "texto": "Our destiny is not to hold or know, but to learn to love and let it grow."},
+  {"id": "Footprint 39", "bloque": 1, "texto": "Though you choose the road you walk upon, destiny decides where you belong."},
+  {"id": "Footprint 40", "bloque": 1, "texto": "Though I may not be where your journey ends, I dream of walking beside you as friends."},
+  {"id": "Footprint 41", "bloque": 1, "texto": "Though our final goal remains unseen, we'll reach a place where we've never been."},
+  {"id": "Footprint 42", "bloque": 1, "texto": "Fight your fate and change the tide; accept it blindly and suffer inside."},
+  {"id": "Footprint 43", "bloque": 1, "texto": "We can read our fate upon the page, or write our story on the stage."},
+  {"id": "Footprint 44", "bloque": 1, "texto": "Fear not the rocks along the trail; with courage high, you shall prevail."},
+  {"id": "Footprint 45", "bloque": 1, "texto": "We may not gain all that we claim, but we can fight to reach our aim."},
+  {"id": "Footprint 46", "bloque": 1, "texto": "Heroes are not born from winning the prize, but from fighting on beneath the skies."},
+  {"id": "Footprint 47", "bloque": 1, "texto": "Only those who fight win the night; those who surrender miss the light."},
+  {"id": "Footprint 48", "bloque": 1, "texto": "The mind finds excuses to delay, yet finds a way when the heart leads the way."},
+  {"id": "Footprint 49", "bloque": 1, "texto": "We feel like prisoners bound in place, forgetting we locked our own cell space."},
+  {"id": "Footprint 50", "bloque": 1, "texto": "Save some applause for those unsung, the silent heroes who died young."},
+  {"id": "Footprint 51", "bloque": 1, "texto": "Let us be destiny, bright and clear; or quiet silence as our paths draw near."},
+  {"id": "Footprint 52", "bloque": 1, "texto": "If you walk not by my side today, dream not of destiny along the way."},
+  {"id": "Footprint 53", "bloque": 1, "texto": "We walked together when spark met spark, and kept on going through the dark."},
+  {"id": "Footprint 54", "bloque": 1, "texto": "We write the present while we live, and read the past in what we give."},
+  {"id": "Footprint 55", "bloque": 1, "texto": "The end of a road where shadows fall, is a new journey answering its call."},
+  {"id": "Footprint 56", "bloque": 1, "texto": "Few understand that life is the stream, the journey itself, not the ultimate dream."},
+  {"id": "Footprint 57", "bloque": 1, "texto": "Nothing is written in fate above; life awaits the words of our love."},
+  {"id": "Footprint 58", "bloque": 1, "texto": "We know the haven we wish to reach, but planning forever leaves us on the beach."},
+  {"id": "Footprint 59", "bloque": 1, "texto": "The present moment you now hold, is the future you awaited, bright and bold."},
+  {"id": "Footprint 60", "bloque": 1, "texto": "Where we have been matters no more; what counts is the future at our door."},
+  {"id": "Footprint 61", "bloque": 1, "texto": "Your destiny is never set in stone; you write each line as you walk alone."},
+  {"id": "Footprint 62", "bloque": 1, "texto": "Life is a voyage sweet or grim, defined by companions and choices within."},
+  {"id": "Footprint 63", "bloque": 1, "texto": "The hours wasted while we wait, are lost forever to our fate."},
+  {"id": "Footprint 64", "bloque": 1, "texto": "We have one single day to die, but all our days to touch the sky."},
+  {"id": "Footprint 65", "bloque": 1, "texto": "We cannot foresee the mistakes ahead, but wise choices today clear the path we tread."},
+  {"id": "Footprint 66", "bloque": 1, "texto": "Ponder what remains when life is past, to know if this living is built to last."},
+  {"id": "Footprint 67", "bloque": 1, "texto": "The distant future for which you prayed, is now the present you have made."},
+  {"id": "Footprint 68", "bloque": 1, "texto": "Not luck, but choices shape our story, bringing regret or triumph's glory."},
+  {"id": "Footprint 69", "bloque": 1, "texto": "Remember life takes a breath to start, and an instant can break it all apart."},
+  {"id": "Footprint 70", "bloque": 1, "texto": "Why waste our thoughts on where we'll be? Look at the past and set present free."},
+  {"id": "Footprint 71", "bloque": 1, "texto": "Tomorrow may bring a brighter sun, but never worse than what is done."},
+  {"id": "Footprint 72", "bloque": 1, "texto": "Coincidences rarely show, and second chances seldom grow."},
+  {"id": "Footprint 73", "bloque": 1, "texto": "Losers chase chances that fade away; winners build wealth from the dark and gray."},
+  {"id": "Footprint 74", "bloque": 1, "texto": "Destiny whispers: a smile to share, a dream to live, and a life to dare."},
+  {"id": "Footprint 75", "bloque": 1, "texto": "We all have dreams beneath the night, but wake we must to face the light."},
+  {"id": "Footprint 76", "bloque": 1, "texto": "We value time so little now, then mourn its loss with furrowed brow."},
+  {"id": "Footprint 77", "bloque": 1, "texto": "True joy is found when we understand: lived moments remain, not wealth in hand."},
+  {"id": "Footprint 78", "bloque": 1, "texto": "If you stand today where you never planned, why worry where tomorrow lands?"},
+  {"id": "Footprint 79", "bloque": 1, "texto": "From what I lived, I learned to see; in what comes next, I'll set me free."},
+  {"id": "Footprint 80", "bloque": 1, "texto": "Never regret the path you took; every step was a lesson in life's book."},
+  {"id": "Footprint 81", "bloque": 1, "texto": "Life will not pause or wait for you; go live it now, or it passes through."},
+  {"id": "Footprint 82", "bloque": 1, "texto": "Though sad conclusions bring us tears, they open doors to brighter years."},
+  {"id": "Footprint 83", "bloque": 1, "texto": "It makes no sense to mourn the dead, if while alive no words were said."},
+  {"id": "Footprint 84", "bloque": 1, "texto": "Empty we came, empty we go; only lived moments remain below."},
+  {"id": "Footprint 85", "bloque": 1, "texto": "Time is a treasure we hoard in vain, spent the moment we remember pain."},
+  {"id": "Footprint 86", "bloque": 1, "texto": "We think too much upon the floor, and end up nowhere as before."},
+  {"id": "Footprint 87", "bloque": 1, "texto": "Joy is no final place to arrive; it is the spirit keeping us alive."},
+  {"id": "Footprint 88", "bloque": 1, "texto": "Doubt where we stand, doubt where we go; but doubt not the worth of your inner glow."},
+  {"id": "Footprint 89", "bloque": 1, "texto": "Others may make our days dark or bright, but only we choose to hold the light."},
+  {"id": "Footprint 90", "bloque": 1, "texto": "All seek joy with restless mind, forgetting in peace is where we find."},
+  {"id": "Footprint 91", "bloque": 1, "texto": "Living is simple: let coldness go, and learn from mistakes of long ago."},
+  {"id": "Footprint 92", "bloque": 1, "texto": "We were not born to dream who we'll be, but to live our truth continuously."},
+  {"id": "Footprint 93", "bloque": 1, "texto": "We all can find joy in what we hold, keeping hopes bright as stories unfold."},
+  {"id": "Footprint 94", "bloque": 1, "texto": "Searching for joy can lead astray; true happiness lives in this moment today."},
+  {"id": "Footprint 95", "bloque": 1, "texto": "Cherish what's yours, fight for your aim, and hold no regrets for choices you claim."},
+  {"id": "Footprint 96", "bloque": 1, "texto": "Enjoy sweet moments while they last, before they fade into the past."},
+  {"id": "Footprint 97", "bloque": 1, "texto": "Our life has one true goal above: to spend our days in joy and love."},
+  {"id": "Footprint 98", "bloque": 1, "texto": "Dreams come in sleep when night is deep, but awake we must walk to hold what we keep."},
+  {"id": "Footprint 99", "bloque": 1, "texto": "If we cannot rise to be our best, let us not sink beneath the rest."},
+  {"id": "Footprint 100", "bloque": 1, "texto": "Though we seem alike beneath the sun, unique and rare is every one."},
+  {"id": "Footprint 101", "bloque": 1, "texto": "The value of gifts is not the paper tied, but the warmth of love felt inside."},
+  {"id": "Footprint 102", "bloque": 1, "texto": "You light my days and guide my way, whenever your eyes look my way."},
+  {"id": "Footprint 103", "bloque": 1, "texto": "In past lives I searched for your grace; in this life I find your embrace."},
+  {"id": "Footprint 104", "bloque": 1, "texto": "The footprints left upon the ground, are marks of dreams we sought and found."},
+  {"id": "Footprint 105", "bloque": 1, "texto": "If tomorrow is unseen and the past is gone, live this moment until the dawn."},
+  {"id": "Footprint 106", "bloque": 1, "texto": "In endless space we are a tiny dot; in vast time, a fleeting spot."},
+  {"id": "Footprint 107", "bloque": 1, "texto": "Though you choose the path you tread, destiny seals where you are led."},
+  {"id": "Footprint 108", "bloque": 1, "texto": "Fools seek the goal at journey's end; the wise love the road around the bend."},
+  {"id": "Footprint 109", "bloque": 1, "texto": "Few comprehend this life we claim: the road is real, the goal a name."},
+  {"id": "Footprint 110", "bloque": 1, "texto": "No traveler ever reached a shore, without departing from the door."},
+  {"id": "Footprint 111", "bloque": 1, "texto": "Never step out just to search in vain; go forth to find and gain."},
+  {"id": "Footprint 112", "bloque": 1, "texto": "When tired we rest our weary head, but awake we must live instead."},
+  {"id": "Footprint 113", "bloque": 2, "texto": "You shine in the sky of my skies. You illuminate the horizon of my lips. You are the light that my desires await every night."},
+  {"id": "Footprint 114", "bloque": 2, "texto": "You will be forgotten for the shadow you left behind, or remembered for the light you cast when you gave love."},
+  {"id": "Footprint 115", "bloque": 2, "texto": "Never let your thoughts dim your light. Always let your feelings illuminate you."},
+  {"id": "Footprint 116", "bloque": 2, "texto": "Don't allow anyone to extinguish the light of your smiles, for those of us who love you need them every day."},
+  {"id": "Footprint 117", "bloque": 2, "texto": "If I have anything to pass on to you, let it be the constant joy you feel by my side."},
+  {"id": "Footprint 118", "bloque": 2, "texto": "Smiles can be the dress with which we clothe our joys, or the disguise with which we hide our tears."},
+  {"id": "Footprint 119", "bloque": 2, "texto": "We shine when we ignite our smiles, and we fade away when we dim with our sorrows."},
+  {"id": "Footprint 110", "bloque": 2, "texto": "A life without hope is like a book without words."},
+  {"id": "Footprint 111", "bloque": 2, "texto": "Never forget that even on the darkest nights, stars never stop shining."},
+  {"id": "Footprint 112", "bloque": 2, "texto": "Never forget that the sun shines on us all, for it does not care who we are, where we are, or where we were born."},
+  {"id": "Footprint 113", "bloque": 2, "texto": "When you see clouds in the sky, remember they are not eternal, so trust that the sun will shine again when drawn by your smiles."},
+  {"id": "Footprint 114", "bloque": 2, "texto": "Your smiles hold more value than you think, for you give meaning to the lives of those you share them with."},
+  {"id": "Footprint 115", "bloque": 2, "texto": "If we do not lack money to live, perhaps we ought to find reasons to smile."},
+  {"id": "Footprint 116", "bloque": 2, "texto": "Never forget that the same person who gives you smiles today may have shed many tears before."},
+  {"id": "Footprint 117", "bloque": 2, "texto": "There are those who leave the chill of their shadow wherever they pass, and those who amaze wherever they go."},
+  {"id": "Footprint 118", "bloque": 2, "texto": "Our mood does not change our lives, but upon it depends whether we dim with our tears or shine with our smiles."},
+  {"id": "Footprint 119", "bloque": 2, "texto": "You are mistaken if you believe goodbyes are wounds, for they are the chance to discover that more stars exist in the sky."},
+  {"id": "Footprint 120", "bloque": 2, "texto": "We may have reasons to cry and show our sorrows, but we need no excuses to live our finest smiles."},
+  {"id": "Footprint 121", "bloque": 2, "texto": "True happiness will not come from the wealth you possess, but from the smiles you give away."},
+  {"id": "Footprint 122", "bloque": 2, "texto": "When you feel you are drowning in a sea of tears, remember that we all learned to swim thanks to our smiles."},
+  {"id": "Footprint 123", "bloque": 2, "texto": "Never rejoice in another's misfortunes, for life hands out sorrows blindly and tomorrow you may be the one to suffer them."},
+  {"id": "Footprint 124", "bloque": 2, "texto": "Being happy does not depend on your luck. You will be happy when you decide to be."},
+  {"id": "Footprint 125", "bloque": 2, "texto": "Our happiness does not depend on the actions of others. It depends solely on what we decide."},
+  {"id": "Footprint 126", "bloque": 2, "texto": "Though we remain the same each day, you change depending on your desire to live and whether you choose to dress in tears or in smiles."},
+  {"id": "Footprint 127", "bloque": 2, "texto": "Never forget that the sun needs no company to shine in freedom, and generously shares its light and warmth with everyone."},
+  {"id": "Footprint 128", "bloque": 2, "texto": "Sometimes we let our lives have tears to spare and smiles to spare."},
+  {"id": "Footprint 129", "bloque": 2, "texto": "Life gives us days to live, and it is up to us to fill them with hope and smiles."},
+  {"id": "Footprint 130", "bloque": 2, "texto": "Happiness is being grateful for what we have without regretting what we want, even if we think we will never have it."},
+  {"id": "Footprint 131", "bloque": 2, "texto": "If the storm is inevitable, your smile is the best raincoat."},
+  {"id": "Footprint 132", "bloque": 2, "texto": "The key lies not in what we do, but in the passion and hope we pour into everything we do."},
+  {"id": "Footprint 133", "bloque": 2, "texto": "You provide the smiles, and destiny grants you life to share your joys with everyone."},
+  {"id": "Footprint 134", "bloque": 2, "texto": "The finest sun is not the one that casts shadows on others, but the one that amazes by the light it gives to everyone."},
+  {"id": "Footprint 135", "bloque": 2, "texto": "Never trust the compliments of strangers, for the words of your friends will always be more sincere."},
+  {"id": "Footprint 136", "bloque": 2, "texto": "I would rather be the smile that wipes away your tears than the presence that vanishes when you need it most."},
+  {"id": "Footprint 137", "bloque": 2, "texto": "Anyone can write our tears, but we alone are the authors of our smiles."},
+  {"id": "Footprint 138", "bloque": 2, "texto": "Life looks more beautiful when your smile shines."},
+  {"id": "Footprint 139", "bloque": 2, "texto": "Life holds value when days are lived with love."},
+  {"id": "Footprint 140", "bloque": 2, "texto": "Do not weep for what you lost. Always smile for what you lived."},
+  {"id": "Footprint 141", "bloque": 2, "texto": "I could spend life dreaming, but I have chosen to spend it flying."},
+  {"id": "Footprint 142", "bloque": 2, "texto": "Love needs no definition, for whoever feels it in their heart never needs words."},
+  {"id": "Footprint 143", "bloque": 2, "texto": "My eyes left tears behind in oblivion, and ever since, I am the sea where my smiles shine."},
+  {"id": "Footprint 144", "bloque": 2, "texto": "Our home will always be wherever they know how to love us."},
+  {"id": "Footprint 145", "bloque": 2, "texto": "Nothing and no one can defeat you, for a woman never falters."},
+  {"id": "Footprint 146", "bloque": 2, "texto": "Whoever makes you smile is the one who teaches you the best way to live."},
+  {"id": "Footprint 147", "bloque": 2, "texto": "Never forget that the smiles we give away and the tears stolen from us are what make us great."},
+  {"id": "Footprint 148", "bloque": 2, "texto": "If you expect nothing from life, you will feel you find something good every day."},
+  {"id": "Footprint 149", "bloque": 2, "texto": "Never forget that wishing well with smiles will bring happiness to those you live with."},
+  {"id": "Footprint 150", "bloque": 2, "texto": "When our tears speak, words become redundant to our feelings."},
+  {"id": "Footprint 151", "bloque": 2, "texto": "When dark thoughts cloud our minds, all colors disappear from our feelings."},
+  {"id": "Footprint 152", "bloque": 2, "texto": "When there is disorder in our feelings, we will find no order in our thoughts."},
+  {"id": "Footprint 153", "bloque": 2, "texto": "No one deserves our bitterest tears, for we all ought to enjoy our sweetest smiles."},
+  {"id": "Footprint 154", "bloque": 2, "texto": "Our moods do not change our lives, but they can turn them into tears or into smiles."},
+  {"id": "Footprint 155", "bloque": 2, "texto": "If your tears are ice, smiles are the finest blend to drink away your sorrows."},
+  {"id": "Footprint 156", "bloque": 2, "texto": "We all possess superpowers when we are polite and kind to others."},
+  {"id": "Footprint 157", "bloque": 2, "texto": "We tend to want everything thinking it will make us happy, when we are unable to live joyfully with what we already have."},
+  {"id": "Footprint 158", "bloque": 2, "texto": "We worry about appearing happy, yet we change nothing to stop being unhappy."},
+  {"id": "Footprint 159", "bloque": 2, "texto": "Our happiness does not come from the hands of others. Our happiness depends on us."},
+  {"id": "Footprint 160", "bloque": 2, "texto": "Flees from jealous people, and also from those who are greedy."},
+  {"id": "Footprint 161", "bloque": 2, "texto": "Whoever dresses in lies feels naked."},
+  {"id": "Footprint 162", "bloque": 2, "texto": "There will always be someone who wants everything you have, but your true worth can never be taken away."},
+  {"id": "Footprint 163", "bloque": 3, "texto": "Do not speak of what you do not know, and do not explain what you do not understand."},
+  {"id": "Footprint 164", "bloque": 3, "texto": "Falling serves us no purpose if afterward we show that we learned nothing."},
+  {"id": "Footprint 165", "bloque": 3, "texto": "No one has ever learned to swim by staying on the shore staring at the sea."},
+  {"id": "Footprint 166", "bloque": 3, "texto": "Life is a school where sometimes we pass and sometimes we fail, but where we always learn."},
+  {"id": "Footprint 167", "bloque": 3, "texto": "He who chooses fools as teachers should not expect to learn good or great lessons."},
+  {"id": "Footprint 168", "bloque": 3, "texto": "Not knowing is not a problem. The true problem is not learning."},
+  {"id": "Footprint 169", "bloque": 3, "texto": "Life never gives bad lessons. What you may find at times are bad teachers."},
+  {"id": "Footprint 170", "bloque": 3, "texto": "Having dreams is not enough. You must be brave and wake up to go out and chase them."},
+  {"id": "Footprint 171", "bloque": 3, "texto": "Do not think that your dreams are far away. Keep dreaming so they do not slip through your fingers."},
+  {"id": "Footprint 172", "bloque": 3, "texto": "Whoever believes that making their dream a reality is possible feels that nothing is impossible."},
+  {"id": "Footprint 173", "bloque": 3, "texto": "We can stop dreaming when we make our dreams come true, or simply when we give up."},
+  {"id": "Footprint 174", "bloque": 3, "texto": "We may feel tired at times, but that only means we are trying to reach our dreams."},
+  {"id": "Footprint 175", "bloque": 3, "texto": "Success is the destination of all those who did not surrender while walking the path."},
+  {"id": "Footprint 176", "bloque": 3, "texto": "We must accept that we lost on the day we gave up."},
+  {"id": "Footprint 177", "bloque": 3, "texto": "Only dreamers know that what seemed impossible is incredible once achieved."},
+  {"id": "Footprint 178", "bloque": 3, "texto": "Making mistakes is natural; it is the price we pay to see our dreams and hopes fulfilled."},
+  {"id": "Footprint 179", "bloque": 3, "texto": "Merit is not having and wanting more, but dreaming, fighting, and in the end, proving your worth to others."},
+  {"id": "Footprint 180", "bloque": 3, "texto": "Do not waste your life fighting everyone. Fight for your dreams to come true."},
+  {"id": "Footprint 181", "bloque": 3, "texto": "The worst mistakes we can make are lamenting what we left unsaid, regretting what we left undone, and failing to learn from the mistakes we made."},
+  {"id": "Footprint 182", "bloque": 3, "texto": "You will be remembered for your triumphs, never for what you left undone because you let your fears defeat you."},
+  {"id": "Footprint 183", "bloque": 3, "texto": "The worst part of believing we know everything is that it makes learning impossible."},
+  {"id": "Footprint 184", "bloque": 3, "texto": "You may face problems for which you find no answers, yet they remain great opportunities to prove that you never surrender."},
+  {"id": "Footprint 185", "bloque": 3, "texto": "Stars will not come closer to us no matter how long we gaze at them, nor will we be closer to our dreams if we do not move."},
+  {"id": "Footprint 186", "bloque": 3, "texto": "Luck will never come searching for you, so if you wait for your fortune to change while doing nothing, you can remain seated waiting."},
+  {"id": "Footprint 187", "bloque": 3, "texto": "Life does not aid those who give up. Life tends to smile on those who, despite everything, keep going."},
+  {"id": "Footprint 188", "bloque": 3, "texto": "Reaching any dream may seem impossible, but if you do not give up, you will make it possible."},
+  {"id": "Footprint 189", "bloque": 3, "texto": "We can never erase dark moments from our lives, but we can always fight to make our dreams come true."},
+  {"id": "Footprint 190", "bloque": 3, "texto": "If we removed the days spent in regret from our lives, consider whether it makes any sense to waste time on sorrow."},
+  {"id": "Footprint 191", "bloque": 3, "texto": "Do not fear failure when reaching for your dreams, for far worse are the doubts in which you will drown thinking about what might have been had you not surrendered to your fears."},
+  {"id": "Footprint 192", "bloque": 3, "texto": "I prefer knowing what happened by trying than spending the future wondering what it would have been like to achieve it."},
+  {"id": "Footprint 193", "bloque": 3, "texto": "Do not wait for others to acknowledge your worth, for you alone know that your dreams set no limits."},
+  {"id": "Footprint 194", "bloque": 3, "texto": "We rush to become the best, forgetting that to become masters we must first be apprentices."},
+  {"id": "Footprint 195", "bloque": 3, "texto": "If you give up, bid farewell to the dreams you hold."},
+  {"id": "Footprint 196", "bloque": 3, "texto": "It matters not whether we are winners or losers, for what will always set us apart is being great dreamers."},
+  {"id": "Footprint 197", "bloque": 3, "texto": "There is no dream so wild that it cannot be reached, nor fear so great that it cannot be overcome."},
+  {"id": "Footprint 198", "bloque": 3, "texto": "Whatever you decide, whatever you live through, never give up."},
+  {"id": "Footprint 199", "bloque": 3, "texto": "Miracles exist because they are the dreams of those who never surrender."},
+  {"id": "Footprint 200", "bloque": 3, "texto": "To make your dreams a reality, you only need to work to live them."},
+  {"id": "Footprint 201", "bloque": 3, "texto": "Winners are those who, instead of thinking themselves losers, thought of how to turn their dreams into reality."},
+  {"id": "Footprint 202", "bloque": 3, "texto": "We grow frustrated when we fall short of our dreams, forgetting to enjoy what we live while awake."},
+  {"id": "Footprint 203", "bloque": 3, "texto": "You may feel that everyone has failed you, but what matters is that you do not fail yourself and never cease chasing your dreams."},
+  {"id": "Footprint 204", "bloque": 3, "texto": "We become our own worst enemies when we give up."},
+  {"id": "Footprint 205", "bloque": 3, "texto": "The only true winner is the one who works to surpass their limits, not to defeat their rivals."},
+  {"id": "Footprint 206", "bloque": 3, "texto": "We are all apprentices when we fall, and we become masters when we rise."},
+  {"id": "Footprint 207", "bloque": 3, "texto": "It is never too early to start dreaming, nor too late to begin anew."},
+  {"id": "Footprint 208", "bloque": 3, "texto": "The first step in learning to fly is beginning to dream."},
+  {"id": "Footprint 209", "bloque": 3, "texto": "The worst thing that can happen to us is not having dreams. The worst is forgetting to pursue what our heart desires."},
+  {"id": "Footprint 210", "bloque": 3, "texto": "Fighting for your dreams can be exhausting, but if you give up, you will live knowing that nothing will ever change."},
+  {"id": "Footprint 211", "bloque": 3, "texto": "We are not all that we dream we will be, because sometimes we settle for who we are, and other times we grow complacent believing everything will come easy."},
+  {"id": "Footprint 212", "bloque": 3, "texto": "They may force us to live wide awake, but they can never steal our dreams."},
+  {"id": "Footprint 213", "bloque": 3, "texto": "Those who fight with all their strength prove their courage, but far greater courage belongs to those who do not surrender even when they have none left."},
+  {"id": "Footprint 214", "bloque": 3, "texto": "If you believe life is giving you no chances, it is not true; seizing them depends on what you decide in every moment."},
+  {"id": "Footprint 215", "bloque": 3, "texto": "As long as you have a dream to fulfill, you have a reason to live."},
+  {"id": "Footprint 216", "bloque": 3, "texto": "Our success depends not on the height of the mountain, but on the willpower our soul demonstrates during the climb."},
+  {"id": "Footprint 217", "bloque": 3, "texto": "We must always remember that we were born free and nothing stops us from chasing our dreams, for we must not turn the fears we feel into barriers."},
+  {"id": "Footprint 218", "bloque": 3, "texto": "Our success depends not on the possibilities given to us, but on making the most of the opportunities we find."},
+  {"id": "Footprint 219", "bloque": 3, "texto": "Success is not having won, but having tried, and having pressed on even when feeling we might not reach our goals."},
+  {"id": "Footprint 220", "bloque": 3, "texto": "I prefer having a list of lived desires than a list of projects that remained only dreams."},
+  {"id": "Footprint 221", "bloque": 3, "texto": "If you do not fulfill your dreams, it will not be for lack of opportunities, but because you do not know how to seize the ones you have."},
+  {"id": "Footprint 222", "bloque": 3, "texto": "Never pay mind to the criticisms directed at you, for they only seek to dishearten you so your dreams remain unfulfilled."},
+  {"id": "Footprint 223", "bloque": 3, "texto": "No one needs wings to fly, only imagination to dream."},
+  {"id": "Footprint 224", "bloque": 3, "texto": "The difference between dreaming and achieving those dreams lies in the work we do to see them come true."},
+  {"id": "Footprint 225", "bloque": 3, "texto": "We waste time while dreaming if we do nothing when we wake to make those dreams come true."},
+  {"id": "Footprint 226", "bloque": 3, "texto": "When we day-dream, we live what we want. When we dream in sleep, we live what we long for."},
+  {"id": "Footprint 227", "bloque": 3, "texto": "Sometimes we use silence to express our deepest feelings."},
+  {"id": "Footprint 228", "bloque": 3, "texto": "We soon forget the caresses that happiness gave us when adversity strikes."},
+  {"id": "Footprint 229", "bloque": 3, "texto": "When sorrows arrive, they hide the sun of our smiles."},
+  {"id": "Footprint 230", "bloque": 3, "texto": "We all know what we want. What we do not know is where to find the manual that tells us how to make our dreams a reality."},
+  {"id": "Footprint 231", "bloque": 3, "texto": "Asleep we dream of what we desire, but awake we must labor to make those dreams real."},
+  {"id": "Footprint 232", "bloque": 3, "texto": "We are always mistaken when we think we cannot reach our dreams, and right when we devote ourselves to finding the path to reach them."},
+  {"id": "Footprint 233", "bloque": 3, "texto": "Since we all rise when we fall, we should learn that lamenting serves us little."},
+  {"id": "Footprint 234", "bloque": 3, "texto": "Living in solitude and carrying sorrow is like walking with eyes fixed only on the stones."},
+  {"id": "Footprint 235", "bloque": 3, "texto": "Rather than getting lost endlessly in our thoughts, it is better to find ourselves enjoying our feelings."},
+  {"id": "Footprint 236", "bloque": 3, "texto": "Our problems can be massive, great, or small, depending on the weight we choose to give them."},
+  {"id": "Footprint 237", "bloque": 4, "texto": "We may not always dare to live our dreams, because whether we admit it or not, we are afraid to live them."},
+  {"id": "Footprint 238", "bloque": 4, "texto": "If you let yourself be carried away by your fears, you will never know how it feels to reach your dreams."},
+  {"id": "Footprint 239", "bloque": 4, "texto": "There are no endless falls. There are only people who forget that you remain on the ground when you choose not to rise."},
+  {"id": "Footprint 240", "bloque": 4, "texto": "Only those who never give up are truly brave, for they refuse to be conquered by the fear that paralyzes the coward."},
+  {"id": "Footprint 241", "bloque": 4, "texto": "Reaching your dreams depends not on the strength you possess, but on never surrendering despite the exhaustion you feel."},
+  {"id": "Footprint 242", "bloque": 4, "texto": "Never think about the fall when you leap. Think instead that when you fly, you will finally fulfill your dreams."},
+  {"id": "Footprint 243", "bloque": 4, "texto": "To the one waiting to see you drown, show them you learned to swim, knowing it is better to live swimming than to perish beneath the waves."},
+  {"id": "Footprint 244", "bloque": 4, "texto": "If sadness comes knocking at your door, leaving it closed is the finest answer."},
+  {"id": "Footprint 245", "bloque": 4, "texto": "Only those who fell and stood back up learned that life is a lesson meant for those who never gave up."},
+  {"id": "Footprint 246", "bloque": 4, "texto": "Each new day is a chance to prove all the courage we carry within."},
+  {"id": "Footprint 247", "bloque": 4, "texto": "We all have the right to feel fear, but we all share the duty to overcome it."},
+  {"id": "Footprint 248", "bloque": 4, "texto": "Fears are merely the excuses we make when we believe we can never fulfill our dreams."},
+  {"id": "Footprint 249", "bloque": 4, "texto": "We all feel pain when we fall, but while some choose to lament, others choose to rise."},
+  {"id": "Footprint 250", "bloque": 4, "texto": "It is far better to live making mistakes than to pass through life motionless out of fear of falling."},
+  {"id": "Footprint 251", "bloque": 4, "texto": "The brave prefer to die fighting, while cowards choose to live in silence."},
+  {"id": "Footprint 252", "bloque": 4, "texto": "What matters is not the pain we feel, but that we never surrender."},
+  {"id": "Footprint 253", "bloque": 4, "texto": "We as human beings are wounds. They always heal, even if the scars remain forever visible upon our souls."},
+  {"id": "Footprint 254", "bloque": 4, "texto": "We lost the day we gave up."},
+  {"id": "Footprint 255", "bloque": 4, "texto": "If we remain on the ground lamenting when we fall, it will only take us longer to reach the sky."},
+  {"id": "Footprint 256", "bloque": 4, "texto": "Neither free, nor imprisoned, nor dead: I will never stop fighting for what I feel."},
+  {"id": "Footprint 257", "bloque": 4, "texto": "Only those who have fallen truly know what it means to suffer."},
+  {"id": "Footprint 258", "bloque": 4, "texto": "Quitting belongs to cowards. Fighting belongs to the brave. And rising after a fall to press onward belongs to heroes."},
+  {"id": "Footprint 259", "bloque": 4, "texto": "If we grow weary, we can always rest; but if we surrender, no success will ever be ours to claim."},
+  {"id": "Footprint 260", "bloque": 4, "texto": "They will tell you many times that you cannot, so that you never try nor realize the immense worth you hold."},
+  {"id": "Footprint 261", "bloque": 4, "texto": "There are people who deserve to be remembered for the love they gave us, and others whom it is wise to forget for the harm they caused us."},
+  {"id": "Footprint 262", "bloque": 4, "texto": "Even if you never manage to reach your dreams, no one can say you failed; for failure belongs only to those who never move forward because they left their destiny in the hands of their fears."},
+  {"id": "Footprint 263", "bloque": 4, "texto": "Do not trust those who urge you to jump, for some are merely eager to applaud when they see you fall."},
+  {"id": "Footprint 264", "bloque": 4, "texto": "Once you have fallen, lamenting that you were not more cautious will serve you little."},
+  {"id": "Footprint 265", "bloque": 4, "texto": "The greatest problem we can face is not being afraid to die, but being afraid to live."},
+  {"id": "Footprint 266", "bloque": 4, "texto": "If someone tries to sink you, show them you know how to swim and will always rise to the surface."},
+  {"id": "Footprint 267", "bloque": 4, "texto": "We suffer enough falls from our own mistakes without others coming along to push us down."},
+  {"id": "Footprint 268", "bloque": 4, "texto": "Do not focus on having failed every time you fall. Focus on what you learned and how you stood back up."},
+  {"id": "Footprint 269", "bloque": 4, "texto": "Never look upon the unfortunate with disdain, for at any moment life can cast you to the ground, and only then will you know what cold feels like."},
+  {"id": "Footprint 270", "bloque": 4, "texto": "We will never again be who we were, nor live what we lived; so never let your fears make your decisions for you."},
+  {"id": "Footprint 271", "bloque": 4, "texto": "Those who only know how to weep over their wounds and scars will never be capable of finding happiness."},
+  {"id": "Footprint 272", "bloque": 4, "texto": "It is not that we lack strength at times; it is simply that we waste it paying attention to fools."},
+  {"id": "Footprint 273", "bloque": 4, "texto": "We become our own worst enemies when we let our fears decide instead of setting our thoughts free."},
+  {"id": "Footprint 274", "bloque": 4, "texto": "The coward goes into battle expecting to win without fighting; the brave goes into battle ready to fight without knowing if they will win."},
+  {"id": "Footprint 275", "bloque": 4, "texto": "Only those who understood they had wings and wished to learn to fly can truly dream."},
+  {"id": "Footprint 276", "bloque": 4, "texto": "If you become the master of your dreams, you will never be a slave to your fears."},
+  {"id": "Footprint 277", "bloque": 4, "texto": "It is a bitter life for whoever fears living, only to end up fearing death."},
+  {"id": "Footprint 278", "bloque": 4, "texto": "Do not listen to those who tell you that you cannot. Pay attention to those who tell you that if you want to, you can."},
+  {"id": "Footprint 279", "bloque": 4, "texto": "It may hurt when we fall, but we learn a valuable lesson when we rise."},
+  {"id": "Footprint 280", "bloque": 4, "texto": "Whoever seeks to extinguish your light with lies only longs for the day you live in darkness."},
+  {"id": "Footprint 281", "bloque": 4, "texto": "Deserving of all our admiration is the person who feels tears falling from their eyes and dries them, turning them into bright smiles."},
+  {"id": "Footprint 282", "bloque": 4, "texto": "There will always be someone telling us we will not fulfill our dreams, but only to discourage us so we stop pursuing them."},
+  {"id": "Footprint 283", "bloque": 4, "texto": "Whoever knows how to listen learns more than whoever never lets others speak."},
+  {"id": "Footprint 284", "bloque": 4, "texto": "From the earth we enjoy the shine of the stars, but were we in heaven, we would see how brightly fools shine down on earth."},
+  {"id": "Footprint 285", "bloque": 4, "texto": "Your smile is a weapon that inflicts no death, yet every fool detests it."},
+  {"id": "Footprint 286", "bloque": 4, "texto": "The clothes you wear do not make you beautiful; you look beautiful whenever you smile."},
+  {"id": "Footprint 287", "bloque": 4, "texto": "Whoever clothes themselves in smiles writes all their days with joy."},
+  {"id": "Footprint 288", "bloque": 4, "texto": "Never dress in sadness, for those colors do not suit you. Remember that you look most beautiful when you put on a smile."},
+  {"id": "Footprint 289", "bloque": 4, "texto": "A smile is what distinguishes wisdom from ignorance."},
+  {"id": "Footprint 290", "bloque": 4, "texto": "When you see someone offering you smiles, remember they learned to smile after swallowing many tears."},
+  {"id": "Footprint 291", "bloque": 4, "texto": "A smile is not only meant to be shown; it is also meant to be shared as a gift."},
+  {"id": "Footprint 292", "bloque": 4, "texto": "A book is a sky where words shine like stars in your gaze."},
+  {"id": "Footprint 293", "bloque": 4, "texto": "If by day you read words, by night you will count stars in your dreams."},
+  {"id": "Footprint 294", "bloque": 4, "texto": "Words are the stars that guide travelers as they navigate the ocean of books."},
+  {"id": "Footprint 295", "bloque": 4, "texto": "There are gazes in which souls can be read, and others that are merely sad, empty pages."},
+  {"id": "Footprint 296", "bloque": 4, "texto": "Fear and sadness are the clouds that sometimes overcast our minds."},
+  {"id": "Footprint 297", "bloque": 4, "texto": "Never let your thoughts extinguish you. Let your feelings illuminate you."},
+  {"id": "Footprint 298", "bloque": 4, "texto": "Life is a box of colored pencils, and we paint our days according to our emotions."},
+  {"id": "Footprint 299", "bloque": 4, "texto": "Life does not supply the colors. You end up painting your life with the shades you choose."},
+  {"id": "Footprint 300", "bloque": 4, "texto": "The skin over which your tears flow will eventually turn into wrinkles."},
+  {"id": "Footprint 301", "bloque": 4, "texto": "When you see clouds gathering in your thoughts, expect that rain will eventually fall upon your feelings."},
+  {"id": "Footprint 302", "bloque": 4, "texto": "The sea had daughters who played in the waves as children, and as they grew, turned into salt. They traveled to our eyes, these daughters of the sea, and ever seek to escape, wanting to return and play with their father once more."},
+  {"id": "Footprint 303", "bloque": 4, "texto": "Tears are the highways upon which sorrows travel."},
+  {"id": "Footprint 304", "bloque": 4, "texto": "We should never stop being children—playing with joy, living in dreams, and writing with smiles the days life gifts us."},
+  {"id": "Footprint 305", "bloque": 4, "texto": "No darkness exists in my dreams when in sleep I see your smiles, nor is there a gray day when I have the light of your gaze."},
+  {"id": "Footprint 306", "bloque": 4, "texto": "What matters is not the shadow you cast by believing yourself grand, but the light you project through the love with which you treat others."},
+  {"id": "Footprint 307", "bloque": 4, "texto": "Fear will never let you follow any path, which is why if you heed it, you will reach no destination."},
+  {"id": "Footprint 308", "bloque": 4, "texto": "If you weep because you lose, you will lack the strength to achieve what you do not yet possess."},
+  {"id": "Footprint 309", "bloque": 4, "texto": "In a world of lies, truths cut as deeply as open wounds."},
+  {"id": "Footprint 310", "bloque": 4, "texto": "If every day we make hundreds of decisions, we must accept that we may make a few mistakes."},
+  {"id": "Footprint 311", "bloque": 4, "texto": "The brave look forward; the coward looks elsewhere."},
+  {"id": "Footprint 312", "bloque": 4, "texto": "Do not think you always have bad luck. It is likely you are simply living among bad people."},
+  {"id": "Footprint 313", "bloque": 4, "texto": "Always guard your words, for sometimes they become sharp knives, and other times the ammunition with which you inflict wounds."}
 ]
+
