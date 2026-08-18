@@ -1,129 +1,166 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Palabras y frases perdidas</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #0d0d0d;
-      color: #ffffff;
-      font-family: 'Georgia', serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-
-    .tarjeta-container {
-      position: relative;
-      width: 90%;
-      max-width: 420px;
-      aspect-ratio: 2 / 3;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-      background-size: cover;
-      background-position: center;
-    }
-
-    /* �rea central donde va superpuesta la frase sobre la plantilla */
-    .contenido-frase {
-      position: absolute;
-      top: 32%;
-      left: 10%;
-      right: 10%;
-      bottom: 25%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 10px;
-    }
-
-    .texto-huella {
-      font-size: 1.25rem;
-      line-height: 1.5;
-      color: #f5f5f5;
-      font-style: italic;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.9);
-    }
-
-    .numero-huella {
-      margin-top: 15px;
-      font-size: 0.8rem;
-      letter-spacing: 2px;
-      color: #a3a3a3;
-      text-transform: uppercase;
-    }
-
-    .boton-accion {
-      margin-top: 25px;
-      padding: 12px 28px;
-      background-color: transparent;
-      color: #d4af37;
-      border: 1px solid #d4af37;
-      border-radius: 25px;
-      font-size: 0.95rem;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      letter-spacing: 1px;
-    }
-
-    .boton-accion:hover {
-      background-color: #d4af37;
-      color: #000;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Words and Phrases - English Version</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        p.subtitle {
+            color: #aaaaaa;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .nav-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        select, button {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            border: 1px solid #444;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover, select:hover {
+            background-color: #333;
+        }
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            margin-bottom: 15px;
+        }
+        .frase-box {
+            font-size: 1.1em;
+            line-height: 1.5;
+            color: #e0e0e0;
+            min-height: 60px;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="tarjeta-container" id="tarjeta">
-    <div class="contenido-frase">
-      <div class="texto-huella" id="textoFrase">Cargando huella...</div>
-      <div class="numero-huella" id="numeroHuella"></div>
+    <h1>Lost Words and Phrases</h1>
+    <p class="subtitle">Collection of footprints and reflections</p>
+
+    <div class="nav-container">
+        <button onclick="window.location.href='https://palabrasyfrasesperdidas-dotcom.github.io/palabras-es/'">🏠 Home (ES)</button>
+        <select id="blockSelect" onchange="changeBlock()">
+            <option value="1">Block 1: Geometry of Destiny</option>
+            <option value="2">Block 2: Footprints of Time</option>
+            <option value="3">Block 3: Echoes of Silence</option>
+            <option value="4">Block 4: Whispers of the Soul</option>
+        </select>
+        <button onclick="prevBlock()">← Previous</button>
+        <button onclick="nextBlock()">Next →</button>
+        <button onclick="randomPhrase()">🎲 Random</button>
     </div>
-  </div>
 
-  <button class="boton-accion" onclick="mostrarFraseAleatoria()">Descubrir otra huella</button>
+    <div class="content-container">
+        <div id="mediaContainer">
+            <!-- Se cargará la imagen o vídeo dinámicamente -->
+        </div>
+        <div class="frase-box" id="fraseBox">
+            Loading phrases...
+        </div>
+    </div>
 
-  <script>
-    let todasLasFrases = [];
+    <script>
+        let frasesData = [];
+        let currentBlock = 1;
 
-    // Mapeo de plantillas por bloque
-    const plantillasPorBloque = {
-      1: 'plantilla1.png'
-    };
+        async function loadData() {
+            try {
+                const response = await fetch('frases.json');
+                frasesData = await response.json();
+                updateView();
+            } catch (error) {
+                document.getElementById('fraseBox').innerText = "Error loading phrases.";
+                console.error(error);
+            }
+        }
 
-    // Cargar frases desde el archivo JSON
-    fetch('frases.json')
-      .then(response => response.json())
-      .then(data => {
-        todasLasFrases = data;
-        mostrarFraseAleatoria();
-      })
-      .catch(error => console.error('Error al cargar las frases:', error));
+        function updateView() {
+            currentBlock = parseInt(document.getElementById('blockSelect').value);
+            
+            // Actualizar multimedia (buscando la nomenclatura _en)
+            const mediaContainer = document.getElementById('mediaContainer');
+            mediaContainer.innerHTML = `
+                <img src="plantilla${currentBlock}_en.png" alt="Template ${currentBlock}" onerror="this.onerror=null; this.src='plantilla${currentBlock}_en.jpg';">
+            `;
 
-    function mostrarFraseAleatoria() {
-      if (todasLasFrases.length === 0) return;
+            // Filtrar frases del bloque actual
+            const filteredPhrases = frasesData.filter(f => f.bloque === currentBlock);
+            const fraseBox = document.getElementById('fraseBox');
 
-      // Selecci�n aleatoria
-      const indice = Math.floor(Math.random() * todasLasFrases.length);
-      const seleccionada = todasLasFrases[indice];
+            if (filteredPhrases.length > 0) {
+                // Mostrar aleatoria o la primera del bloque
+                const randomF = filteredPhrases[Math.floor(Math.random() * filteredPhrases.length)];
+                fraseBox.innerHTML = `<strong>Footprint ${randomF.id}</strong> — ${randomF.texto}`;
+            } else {
+                fraseBox.innerText = "No phrases available for this block yet.";
+            }
+        }
 
-      // Aplicar plantilla de fondo seg�n el bloque
-      const tarjeta = document.getElementById('tarjeta');
-      const imagenFondo = plantillasPorBloque[seleccionada.bloque] || 'plantilla1.png';
-      tarjeta.style.backgroundImage = `url('${imagenFondo}')`;
+        function changeBlock() {
+            updateView();
+        }
 
-      // Mostrar texto y n�mero de huella
-      document.getElementById('textoFrase').innerText = `"${seleccionada.texto}"`;
-      document.getElementById('numeroHuella').innerText = `Huella ${seleccionada.id.toString().padStart(2, '0')}`;
-    }
-  </script>
+        function nextBlock() {
+            const select = document.getElementById('blockSelect');
+            if (select.selectedIndex < select.options.length - 1) {
+                select.selectedIndex++;
+                updateView();
+            }
+        }
+
+        function prevBlock() {
+            const select = document.getElementById('blockSelect');
+            if (select.selectedIndex > 0) {
+                select.selectedIndex--;
+                updateView();
+            }
+        }
+
+        function randomPhrase() {
+            if (frasesData.length === 0) return;
+            const randomF = frasesData[Math.floor(Math.random() * frasesData.length)];
+            document.getElementById('blockSelect').value = randomF.bloque;
+            updateView();
+            // Sobrescribir con la frase específica elegida aleatoriamente de todo el set
+            document.getElementById('fraseBox').innerHTML = `<strong>Footprint ${randomF.id}</strong> — ${randomF.texto}`;
+        }
+
+        // Cargar al iniciar
+        loadData();
+    </script>
 </body>
 </html>
