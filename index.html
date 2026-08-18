@@ -28,7 +28,7 @@
         }
         button:hover, select:hover { background-color: #333; }
         .content-container { display: flex; flex-direction: column; align-items: center; max-width: 600px; width: 100%; text-align: center; }
-        img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); margin-bottom: 15px; }
+        video { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); margin-bottom: 15px; }
         .frase-box { font-size: 1.1em; line-height: 1.5; color: #e0e0e0; min-height: 80px; padding: 10px; }
     </style>
 </head>
@@ -38,7 +38,6 @@
     <p class="subtitle">Collection of footprints and reflections</p>
 
     <div class="nav-container">
-        <!-- Apunta al repositorio general/principal mostrado en el segundo desplegable -->
         <button onclick="window.location.href='https://palabrasyfrasesperdidas-dotcom.github.io/palabrasyfrasesperdidas/'">🏠 Home (Intro)</button>
         <select id="blockSelect" onchange="changeBlock()">
             <option value="1">Block 1: Geometry of Destiny</option>
@@ -79,14 +78,22 @@
             if (isNewBlock) currentIndexInBlock = 0;
 
             const mediaContainer = document.getElementById('mediaContainer');
-            mediaContainer.innerHTML = `<img src="plantilla${currentBlock}_en.png" alt="Template ${currentBlock}">`;
+            // Usamos la etiqueta video apuntando al archivo .mp4 correspondiente de la plantilla
+            mediaContainer.innerHTML = `
+                <video autoplay muted loop playsinline>
+                    <source src="plantilla${currentBlock}_video_en.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            `;
 
             const filteredPhrases = frasesData.filter(f => f.bloque === currentBlock);
             const fraseBox = document.getElementById('fraseBox');
 
             if (filteredPhrases.length > 0) {
                 const frase = filteredPhrases[currentIndexInBlock];
-                fraseBox.innerHTML = `<strong>Footprint ${frase.id}</strong> — ${frase.texto}`;
+                // Comprobamos si el texto ya incluye la palabra Footprint para no duplicarla
+                let textoFrase = frase.texto;
+                fraseBox.innerHTML = `<strong>Footprint ${frase.id}</strong> — ${textoFrase}`;
             } else {
                 fraseBox.innerText = "No phrases available for this block.";
             }
