@@ -28,7 +28,6 @@
         }
         button:hover, select:hover { background-color: #333; }
         
-        /* Contenedor principal que permite superponer el texto sobre el vídeo igual que en español */
         .card-container {
             position: relative;
             width: 100%;
@@ -44,7 +43,6 @@
             display: block;
         }
         
-        /* Texto superpuesto sobre el vídeo */
         .text-overlay {
             position: absolute;
             top: 0;
@@ -126,7 +124,6 @@
         }
 
         function updateView(isNewBlock = false) {
-            currentBlock = parseInt(document.getElementById('blockSelect').value);
             if (isNewBlock) currentIndexInBlock = 0;
 
             // Actualizar el vídeo del bloque correspondiente
@@ -150,7 +147,9 @@
         }
 
         function changeBlock() { 
-            document.getElementById('blockSelect').value = currentBlock;
+            // Capturamos correctamente el valor seleccionado en el desplegable
+            const select = document.getElementById('blockSelect');
+            currentBlock = parseInt(select.value);
             updateView(true); 
         }
 
@@ -180,7 +179,7 @@
                     currentBlock = parseInt(select.value);
                     const prevPhrases = frasesData.filter(f => f.bloque === currentBlock);
                     currentIndexInBlock = prevPhrases.length - 1;
-                    document.getElementById('blockSelect').value = currentBlock;
+                    select.value = currentBlock;
                     updateView(false);
                     return;
                 }
