@@ -85,6 +85,8 @@
             <option value="2">Block 2: Footprints of Time</option>
             <option value="3">Block 3: Echoes of Silence</option>
             <option value="4">Block 4: Whispers of the Soul</option>
+            <!-- Bloques intermedios según tu proyecto -->
+            <option value="9">Block 9: The Time That Breathes</option>
         </select>
         <button onclick="prevBlock()">← Previous</button>
         <button onclick="nextBlock()">Next →</button>
@@ -126,7 +128,6 @@
         function updateView(isNewBlock = false) {
             if (isNewBlock) currentIndexInBlock = 0;
 
-            // Actualizar el vídeo del bloque correspondiente
             const videoElement = document.getElementById('bgVideo');
             videoElement.src = `plantilla${currentBlock}_video_en.mp4`;
             videoElement.load();
@@ -139,7 +140,7 @@
             if (filteredPhrases.length > 0) {
                 const frase = filteredPhrases[currentIndexInBlock];
                 fraseBox.innerText = `"${frase.texto}"`;
-                counterBox.innerText = `Footprint ${frase.id} (${currentIndexInBlock + 1} / ${filteredPhrases.length})`;
+                counterBox.innerText = `${frase.id} (${currentIndexInBlock + 1} / ${filteredPhrases.length})`;
             } else {
                 fraseBox.innerText = "No phrases available for this block.";
                 counterBox.innerText = "";
@@ -178,7 +179,6 @@
                     currentBlock = parseInt(select.value, 10);
                     const prevPhrases = frasesData.filter(f => Number(f.bloque) === Number(currentBlock));
                     currentIndexInBlock = prevPhrases.length - 1;
-                    select.value = currentBlock;
                     updateView(false);
                     return;
                 }
