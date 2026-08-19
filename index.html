@@ -99,7 +99,7 @@
     <div class="content-container" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
         <div class="card-container">
             <video id="bgVideo" autoplay muted loop playsinline>
-                <source src="" type="video/mp4">
+                <source id="videoSource" src="" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="text-overlay">
@@ -117,9 +117,7 @@
         async function loadData() {
             try {
                 const response = await fetch('frases_en.json');
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 frasesData = await response.json();
                 updateView(true);
             } catch (error) {
@@ -132,7 +130,14 @@
             if (isNewBlock) currentIndexInBlock = 0;
 
             const videoElement = document.getElementById('bgVideo');
-            videoElement.src = `plantilla${currentBlock}_video_en.mp4`;
+            const videoSource = document.getElementById('videoSource');
+            
+            // Actualización de la fuente del video
+            const fileName = `plantilla${currentBlock}_video_en.mp4`;
+            videoSource.src = fileName;
+            
+            console.log("Cargando video:", fileName);
+            
             videoElement.load();
             videoElement.play().catch(e => console.log("Auto-play prevented:", e));
 
@@ -156,6 +161,7 @@
             updateView(true); 
         }
 
+        // ... resto de tus funciones (nextBlock, prevBlock, randomPhrase) permanecen igual
         function nextBlock() {
             const filteredPhrases = frasesData.filter(f => Number(f.bloque) === Number(currentBlock));
             if (currentIndexInBlock < filteredPhrases.length - 1) {
@@ -193,14 +199,11 @@
             if (frasesData.length === 0) return;
             const randomIndex = Math.floor(Math.random() * frasesData.length);
             const randomItem = frasesData[randomIndex];
-            
             currentBlock = Number(randomItem.bloque);
             document.getElementById('blockSelect').value = currentBlock;
-
             const filteredPhrases = frasesData.filter(f => Number(f.bloque) === Number(currentBlock));
             currentIndexInBlock = filteredPhrases.findIndex(f => f.id === randomItem.id);
             if (currentIndexInBlock === -1) currentIndexInBlock = 0;
-
             updateView(false);
         }
 
