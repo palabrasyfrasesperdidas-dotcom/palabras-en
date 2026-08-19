@@ -132,8 +132,14 @@
             const videoElement = document.getElementById('bgVideo');
             const videoSource = document.getElementById('videoSource');
             
-            // Actualización de la fuente del video
-            const fileName = `plantilla${currentBlock}_video_en.mp4`;
+            // CORRECCIÓN: Nombre especial para el bloque 5
+            let fileName;
+            if (Number(currentBlock) === 5) {
+                fileName = "plantilla_video5_en.mp4";
+            } else {
+                fileName = `plantilla${currentBlock}_video_en.mp4`;
+            }
+            
             videoSource.src = fileName;
             
             console.log("Cargando video:", fileName);
@@ -161,7 +167,6 @@
             updateView(true); 
         }
 
-        // ... resto de tus funciones (nextBlock, prevBlock, randomPhrase) permanecen igual
         function nextBlock() {
             const filteredPhrases = frasesData.filter(f => Number(f.bloque) === Number(currentBlock));
             if (currentIndexInBlock < filteredPhrases.length - 1) {
