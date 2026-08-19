@@ -98,7 +98,7 @@
 
     <div class="content-container" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
         <div class="card-container">
-            <video id="bgVideo" autoplay muted loop playsinline>
+            <video id="bgVideo" autoplay muted loop playsinline preload="auto">
                 <source id="videoSource" src="" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -113,6 +113,7 @@
         let frasesData = [];
         let currentBlock = 1;
         let currentIndexInBlock = 0; 
+        let isVideoReady = false;
 
         async function loadData() {
             try {
@@ -131,8 +132,15 @@
 
             const videoElement = document.getElementById('bgVideo');
             const videoSource = document.getElementById('videoSource');
+            const fraseBox = document.getElementById('fraseBox');
+            const counterBox = document.getElementById('counterBox');
+
+            // Mientras carga el nuevo video, mostramos estado de carga sincronizado
+            fraseBox.innerText = "Loading video...";
+            counterBox.innerText = "";
+            isVideoReady = false;
             
-            // CORRECCIÓN: Nombre especial para el bloque 5
+            // Nombre especial para el bloque 5
             let fileName;
             if (Number(currentBlock) === 5) {
                 fileName = "plantilla_video5_en.mp4";
@@ -141,11 +149,17 @@
             }
             
             videoSource.src = fileName;
-            
             console.log("Cargando video:", fileName);
             
             videoElement.load();
             videoElement.play().catch(e => console.log("Auto-play prevented:", e));
+        }
+
+        // Evento que se ejecuta exactamente cuando el video ya puede reproducirse sin tirones
+        const videoElement = document.getElementById('bgVideo');
+        videoElement.oncanplay = function() {
+            if (isVideoReady) return; // Evitar múltiples ejecuciones innecesarias
+            isVideoReady = true;
 
             const filteredPhrases = frasesData.filter(f => Number(f.bloque) === Number(currentBlock));
             const fraseBox = document.getElementById('fraseBox');
@@ -159,7 +173,7 @@
                 fraseBox.innerText = "No phrases available for this block.";
                 counterBox.innerText = "";
             }
-        }
+        };
 
         function changeBlock() { 
             const select = document.getElementById('blockSelect');
