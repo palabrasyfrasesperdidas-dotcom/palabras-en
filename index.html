@@ -36,6 +36,8 @@
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(0,0,0,0.5);
             margin-bottom: 10px;
+            background-size: cover;
+            background-position: center;
         }
         .card-container video {
             width: 100%;
@@ -90,6 +92,9 @@
             <option value="7">Block 7: The Sky of the Stars</option>
             <option value="8">Block 8: The Ethics of the Heart</option>
             <option value="9">Block 9: The Time That Breathes</option>
+            <option value="10">Block 10: Oceans of Thought</option>
+            <option value="11">Block 11: Reflections of Life</option>
+            <option value="12">Block 12: Horizons of Wisdom</option>
         </select>
         <button onclick="prevBlock()">← Previous</button>
         <button onclick="nextBlock()">Next →</button>
@@ -97,7 +102,7 @@
     </div>
 
     <div class="content-container" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-        <div class="card-container">
+        <div class="card-container" id="cardContainer">
             <video id="bgVideo" autoplay muted loop playsinline preload="auto">
                 <source id="videoSource" src="" type="video/mp4">
                 Your browser does not support the video tag.
@@ -132,15 +137,18 @@
 
             const videoElement = document.getElementById('bgVideo');
             const videoSource = document.getElementById('videoSource');
+            const cardContainer = document.getElementById('cardContainer');
             const fraseBox = document.getElementById('fraseBox');
             const counterBox = document.getElementById('counterBox');
 
-            // Mientras carga el nuevo video, mostramos estado de carga sincronizado
-            fraseBox.innerText = "Loading video...";
+            fraseBox.innerText = "Loading content...";
             counterBox.innerText = "";
             isVideoReady = false;
             
-            // Nombre especial para el bloque 5
+            // Restaurar la visualización del vídeo por si en el bloque anterior falló y se ocultó
+            videoElement.style.display = "block";
+            cardContainer.style.backgroundImage = "none";
+            
             let fileName;
             if (Number(currentBlock) === 5) {
                 fileName = "plantilla_video5_en.mp4";
@@ -155,12 +163,41 @@
             videoElement.play().catch(e => console.log("Auto-play prevented:", e));
         }
 
-        // Evento que se ejecuta exactamente cuando el video ya puede reproducirse sin tirones
+        // Manejo de errores de carga del vídeo (Fallback a imagen)
         const videoElement = document.getElementById('bgVideo');
-        videoElement.oncanplay = function() {
-            if (isVideoReady) return; // Evitar múltiples ejecuciones innecesarias
-            isVideoReady = true;
+        
+        videoElement.onerror = function() {
+            console.warn(`No se pudo cargar el vídeo para el bloque ${currentBlock}. Usando imagen de respaldo.`);
+            fallbackToImage();
+        };
 
+        function fallbackToImage() {
+            const cardContainer = document.getElementById('cardContainer');
+            videoElement.style.display = "none"; // Ocultar elemento de vídeo roto
+            
+            let imageName;
+            if (Number(currentBlock) === 5) {
+                imageName = "plantilla_img5.jpg"; // Ajusta el nombre si difiere en tu servidor
+            } else {
+                imageName = `plantilla${currentBlock}_img.jpg`;
+            }
+            
+            cardContainer.style.backgroundImage = `url('${imageName}')`;
+            
+            // Forzar renderizado de la frase ya que el vídeo falló
+            if (!isVideoReady) {
+                isVideoReady = true;
+                renderPhraseContent();
+            }
+        }
+
+        videoElement.oncanplay = function() {
+            if (isVideoReady) return; 
+            isVideoReady = true;
+            renderPhraseContent();
+        };
+
+        function renderPhraseContent() {
             const filteredPhrases = frasesData.filter(f => Number(f.bloque) === Number(currentBlock));
             const fraseBox = document.getElementById('fraseBox');
             const counterBox = document.getElementById('counterBox');
@@ -173,7 +210,7 @@
                 fraseBox.innerText = "No phrases available for this block.";
                 counterBox.innerText = "";
             }
-        };
+        }
 
         function changeBlock() { 
             const select = document.getElementById('blockSelect');
