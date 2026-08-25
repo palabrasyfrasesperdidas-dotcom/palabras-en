@@ -3,7 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lost Words and Phrases - English Version</title>
+    
+    <!-- SEO & Essential Metadata - English -->
+    <title>Lost Words and Phrases | English Collection</title>
+    <meta name="description" content="Explore the collection of footprints and reflections of Lost Words and Phrases in English. Browse through thematic blocks with a unique literary design.">
+    <meta name="keywords" content="lost words, lost phrases, literature, reflections, literary cartography, English">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Lost Words and Phrases | English Collection">
+    <meta property="og:description" content="Collection of literary footprints and reflections organized by thematic blocks.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://palabrasyfrasesperdidas-dotcom.github.io/palabras-en/">
+    
+    <!-- Hreflang Links for Multilingual SEO -->
+    <link rel="alternate" hreflang="es" href="https://palabrasyfrasesperdidas-dotcom.github.io/palabras-es/">
+    <link rel="alternate" hreflang="en" href="https://palabrasyfrasesperdidas-dotcom.github.io/palabras-en/">
+    <link rel="alternate" hreflang="ja" href="https://palabrasyfrasesperdidas-dotcom.github.io/palabras-jp/">
+    <link rel="alternate" hreflang="fr" href="https://palabrasyfrasesperdidas-dotcom.github.io/palabras-fr/">
+    <link rel="alternate" hreflang="de" href="https://palabrasyfrasesperdidas-dotcom.github.io/palabras-al/">
+    <link rel="alternate" hreflang="x-default" href="https://palabrasyfrasesperdidas-dotcom.github.io/palabrasyfrasesperdidas/">
+
     <style>
         body {
             background-color: #121212;
@@ -147,7 +166,6 @@
             counterBox.innerText = "";
             isVideoReady = false;
             
-            // Restaurar la visualización del vídeo por si en el bloque anterior falló y se ocultó
             videoElement.style.display = "block";
             cardContainer.style.backgroundImage = "none";
             
@@ -165,7 +183,6 @@
             videoElement.play().catch(e => console.log("Auto-play prevented:", e));
         }
 
-        // Manejo de errores de carga del vídeo (Fallback a imagen)
         const videoElement = document.getElementById('bgVideo');
         
         videoElement.onerror = function() {
@@ -175,18 +192,17 @@
 
         function fallbackToImage() {
             const cardContainer = document.getElementById('cardContainer');
-            videoElement.style.display = "none"; // Ocultar elemento de vídeo roto
+            videoElement.style.display = "none";
             
             let imageName;
             if (Number(currentBlock) === 5) {
-                imageName = "plantilla_img5.jpg"; // Ajusta el nombre si difiere en tu servidor
+                imageName = "plantilla_img5.jpg";
             } else {
                 imageName = `plantilla${currentBlock}_img.jpg`;
             }
             
             cardContainer.style.backgroundImage = `url('${imageName}')`;
             
-            // Forzar renderizado de la frase ya que el vídeo falló
             if (!isVideoReady) {
                 isVideoReady = true;
                 renderPhraseContent();
