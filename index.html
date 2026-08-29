@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
@@ -15,12 +14,12 @@
     
     <!-- SEO & Essential Metadata - English -->
     <title>Lost Words and Phrases | English Collection</title>
-    <meta name="description" content="Explore the collection of footprints and reflections of Lost Words and Phrases in English. Browse through thematic blocks with a unique literary design.">
+    <meta name="description" content="Explore the collection of traces and reflections of Lost Words and Phrases in English. Browse through thematic blocks with a unique literary design.">
     <meta name="keywords" content="lost words, lost phrases, literature, reflections, literary cartography, English">
     
     <!-- Open Graph for Social Media -->
     <meta property="og:title" content="Lost Words and Phrases | English Collection">
-    <meta property="og:description" content="Collection of literary footprints and reflections organized by thematic blocks.">
+    <meta property="og:description" content="Collection of literary traces and reflections organized by thematic blocks.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://palabrasyfrasesperdidas-dotcom.github.io/palabras-en/">
     
@@ -191,7 +190,7 @@
 
     <header>
         <h1>Lost Words and Phrases</h1>
-        <p class="subtitle">Collection of footprints and reflections</p>
+        <p class="subtitle">Collection of traces and reflections</p>
     </header>
 
     <div class="viewer-section">
@@ -224,17 +223,17 @@
         "Block 1: Geometry of Destiny",
         "Block 2: Architecture of the Soul",
         "Block 3: Anatomy of Silence",
-        "Block 4: Fear and Its Shadows",
+        "Block 4: Fear and its Shadows",
         "Block 5: The Gaze of the World",
         "Block 6: The Noise of Fools",
-        "Block 7: The Sky of the Stars",
+        "Block 7: The Sky of Stars",
         "Block 8: The Ethics of the Heart",
-        "Block 9: The Breathing Time",
+        "Block 9: Breathing Time",
         "Block 10: The Game of Living",
-        "Block 11: The Heartbeat of Freedom",
-        "Block 12: The Anatomy of Thought",
+        "Block 11: The Beat of Freedom",
+        "Block 12: Anatomy of Thought",
         "Block 13: The Universe of Words",
-        "Block 14: The Solitude That Speaks"
+        "Block 14: The Speaking Solitude"
     ];
 
     let allFrases = [];
@@ -266,8 +265,8 @@
             loadingElem.textContent = "Loading...";
         }
         try {
-            const response = await fetch('frases_en.json?t=' + Date.now());
-            if (!response.ok) throw new Error("HTTP Error " + response.status);
+            const response = await fetch('frases.json?t=' + Date.now());
+            if (!response.ok) throw new Error("HTTP error " + response.status);
             allFrases = await response.json();
             if (loadingElem) loadingElem.style.display = 'none';
 
@@ -279,7 +278,7 @@
             console.error("Error loading data:", error);
             if (loadingElem) {
                 loadingElem.style.display = 'block';
-                loadingElem.textContent = "Error loading frases_en.json";
+                loadingElem.textContent = "Error loading frases.json";
             }
         }
     }
@@ -297,7 +296,7 @@
 
         if (currentFilteredFrases.length === 0) {
             stopAnimation();
-            if (huellaCounter) huellaCounter.textContent = "No footprints in this block";
+            if (huellaCounter) huellaCounter.textContent = "No traces in this block";
             if (botonesAccionContainer) botonesAccionContainer.innerHTML = "";
             if (ctx && canvas) ctx.clearRect(0, 0, canvas.width, canvas.height);
             return;
@@ -330,7 +329,7 @@
         const idUnico = `en_${item.id || (currentBlockNum + '_' + currentIndex)}`;
 
         if (huellaCounter) {
-            huellaCounter.textContent = `Footprint ${item.id} (${currentIndex + 1} / ${currentFilteredFrases.length})`;
+            huellaCounter.textContent = `Trace ${item.id} (${currentIndex + 1} / ${currentFilteredFrases.length})`;
         }
         if (prevBtn) prevBtn.disabled = currentIndex === 0;
         if (nextBtn) nextBtn.disabled = currentIndex === currentFilteredFrases.length - 1;
@@ -339,7 +338,7 @@
             botonesAccionContainer.innerHTML = `
                 <div class="interaccion-container">
                     <button class="btn-accion" id="btn-huella-${idUnico}" onclick="darHuella('${idUnico}')">
-                        ⭐ Leave footprint (<span id="count-huella-${idUnico}">0</span>)
+                        ⭐ Leave a trace (<span id="count-huella-${idUnico}">0</span>)
                     </button>
                     <button class="btn-accion" id="btn-rumbo-${idUnico}" onclick="alternarRumbo('${idUnico}')">
                         <svg viewBox="0 0 24 24"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg>
@@ -350,8 +349,8 @@
             actualizarEstadoUIInteraccion(idUnico);
         }
 
-        let imgPath = `plantilla${currentBlockNum}_en.png`;
-        let videoPath = `plantilla${currentBlockNum}_en.mp4`;
+        const imgPath = `plantilla${currentBlockNum}.png`;
+        const videoPath = `plantilla${currentBlockNum}_video.mp4`;
 
         const bgImg = new Image();
         bgImg.src = imgPath;
@@ -389,7 +388,7 @@
                 contadorSpan.textContent = contadores[idUnico] || 0;
             }
         } catch (e) {
-            console.error("Could not load footprints count", e);
+            console.error("Could not load traces count", e);
         }
     }
 
@@ -421,7 +420,7 @@
             if (countSpan) countSpan.textContent = contadores[idUnico];
 
         } catch (e) {
-            console.error("Error registering footprint", e);
+            console.error("Error registering trace", e);
         }
     }
 
