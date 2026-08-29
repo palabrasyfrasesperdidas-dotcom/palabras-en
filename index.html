@@ -269,7 +269,7 @@
             loadingElem.textContent = "Loading...";
         }
         try {
-            const response = await fetch('frases.json?t=' + Date.now());
+            const response = await fetch('frases_en.json?t=' + Date.now());
             if (!response.ok) throw new Error("HTTP error " + response.status);
             allFrases = await response.json();
             if (loadingElem) loadingElem.style.display = 'none';
@@ -282,7 +282,7 @@
             console.error("Error loading data:", error);
             if (loadingElem) {
                 loadingElem.style.display = 'block';
-                loadingElem.textContent = "Error loading frases.json";
+                loadingElem.textContent = "Error loading frases_en.json";
             }
         }
     }
@@ -601,3 +601,4 @@
 </script>
 </body>
 </html>
+
