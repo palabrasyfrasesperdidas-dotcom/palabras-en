@@ -195,11 +195,11 @@
 
     <div class="viewer-section">
         <div class="controls">
-            <button id="homeBtn">🏠 Home</button>
+            <button id="homeBtn">&#127968; Home</button>
             <select id="blockSelect"></select>
             <button id="prevBtn">&larr; Previous</button>
             <button id="nextBtn">Next &rarr;</button>
-            <button id="randomBtn">🎲 Random</button>
+            <button id="randomBtn">&#127922; Random</button>
         </div>
 
         <!-- Grouped interaction controls on top -->
@@ -233,7 +233,11 @@
         "Block 11: The Beat of Freedom",
         "Block 12: Anatomy of Thought",
         "Block 13: The Universe of Words",
-        "Block 14: The Speaking Solitude"
+        "Block 14: The Speaking Solitude",
+        "Block 15: The Body That Speaks",
+        "Block 16: The Map of Memory",
+        "Block 17: Horizons of Dust",
+        "Block 18: Thresholds of the Unknown"
     ];
 
     let allFrases = [];
@@ -338,7 +342,7 @@
             botonesAccionContainer.innerHTML = `
                 <div class="interaccion-container">
                     <button class="btn-accion" id="btn-huella-${idUnico}" onclick="darHuella('${idUnico}')">
-                        ⭐ Leave a trace (<span id="count-huella-${idUnico}">0</span>)
+                        &#11088; Leave a trace (<span id="count-huella-${idUnico}">0</span>)
                     </button>
                     <button class="btn-accion" id="btn-rumbo-${idUnico}" onclick="alternarRumbo('${idUnico}')">
                         <svg viewBox="0 0 24 24"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg>
@@ -577,7 +581,7 @@
         }
 
         if (randomBtn) {
-            randomBtn.addEventListener('click', (e) => {
+            randomBtn.appendEvent?.() || randomBtn.addEventListener('click', (e) => {
                 e.preventDefault();
                 if (allFrases.length === 0) return;
                 const randomIndex = Math.floor(Math.random() * allFrases.length);
