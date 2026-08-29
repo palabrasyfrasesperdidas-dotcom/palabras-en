@@ -1,14 +1,14 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YKWEY6WPF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YKWEY6WPF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-9YKWEY6WPF');
-</script>
+      gtag('config', 'G-9YKWEY6WPF');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -581,7 +581,7 @@
         }
 
         if (randomBtn) {
-            randomBtn.appendEvent?.() || randomBtn.addEventListener('click', (e) => {
+            randomBtn.addEventListener('click', (e) => {
                 e.preventDefault();
                 if (allFrases.length === 0) return;
                 const randomIndex = Math.floor(Math.random() * allFrases.length);
@@ -601,4 +601,3 @@
 </script>
 </body>
 </html>
-
