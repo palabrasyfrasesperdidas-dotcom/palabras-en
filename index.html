@@ -47,48 +47,94 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            padding: 20px;
+            padding: 10px 15px;
         }
+
+        /* Top navigation bar strictly aligned to the central block (340px) */
+        .top-navbar {
+            display: flex;
+            width: 100%;
+            max-width: 340px;
+            gap: 6px;
+            margin-bottom: 6px;
+        }
+
+        .btn-navbar {
+            background-color: #1a1a1a;
+            border: 1px solid #333333;
+            color: #cccccc;
+            padding: 5px 8px;
+            font-size: 0.75rem;
+            border-radius: 6px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            flex: 1;
+        }
+        .btn-navbar:hover {
+            background-color: #2a2a2a;
+            border-color: #555555;
+            color: #ffffff;
+        }
+        .btn-navbar.book-nav:hover {
+            border-color: #436b43;
+            color: #b8f2b8;
+        }
+
         header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             width: 100%;
-            max-width: 900px;
+            max-width: 800px;
         }
         h1 {
-            font-size: 2rem;
-            margin-bottom: 5px;
+            font-size: 1.5rem;
+            margin-bottom: 0;
             color: #e0e0e0;
-        }
-        p.subtitle {
-            font-size: 1rem;
-            color: #888888;
         }
         .viewer-section {
             display: flex;
             width: 100%;
-            max-width: 900px;
+            max-width: 650px;
             flex-direction: column;
             align-items: center;
         }
-        .controls {
+        
+        /* Clean controls centered exclusively on reading */
+        .controls-wrapper {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            flex-direction: column;
+            gap: 6px;
+            width: 100%;
+            max-width: 340px;
+            margin-bottom: 10px;
+        }
+        .controls-row {
+            display: flex;
             justify-content: center;
-            margin-bottom: 15px;
+            gap: 6px;
+            flex-wrap: wrap;
             width: 100%;
         }
+
         select, button {
             background-color: #1a1a1a;
             color: #ffffff;
             border: 1px solid #333333;
-            padding: 10px 16px;
-            font-size: 0.95rem;
+            padding: 6px 10px;
+            font-size: 0.8rem;
             border-radius: 6px;
             cursor: pointer;
             transition: background-color 0.2s, border-color 0.2s;
             touch-action: manipulation;
+        }
+        select.block-select {
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
         }
         select:hover, button:hover:not(:disabled) {
             background-color: #2a2a2a;
@@ -98,14 +144,16 @@
             opacity: 0.4;
             cursor: not-allowed;
         }
+
+        /* Canvas container optimized to 340px */
         .canvas-container {
             position: relative;
             width: 100%;
-            max-width: 480px;
+            max-width: 340px;
             background-color: #000000;
-            border-radius: 12px;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.8);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -117,53 +165,53 @@
             display: block;
         }
         .info-panel {
-            margin-top: 15px;
+            margin-top: 8px;
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
-            max-width: 480px;
-            font-size: 0.9rem;
-            color: #aaaaaa;
+            max-width: 340px;
+            font-size: 0.8rem;
+            color: #888888;
         }
         #loading {
             position: absolute;
             color: #ffffff;
-            font-size: 1.1rem;
+            font-size: 0.9rem;
             background: rgba(0,0,0,0.7);
-            padding: 10px 20px;
-            border-radius: 8px;
+            padding: 6px 12px;
+            border-radius: 6px;
             display: none;
             z-index: 10;
         }
 
-        /* Top interaction button panel styles */
         .interaccion-container {
             display: flex;
-            gap: 15px;
+            gap: 6px;
             justify-content: center;
             align-items: center;
             width: 100%;
-            margin-bottom: 20px;
         }
 
         .btn-accion {
             background: #1a1a1a;
             border: 1px solid #444;
             color: #bbb;
-            padding: 8px 16px;
+            padding: 5px 10px;
             border-radius: 20px;
             cursor: pointer;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 5px;
             transition: all 0.25s ease;
+            flex: 1;
+            justify-content: center;
         }
 
         .btn-accion svg {
-            width: 18px;
-            height: 18px;
+            width: 14px;
+            height: 14px;
             fill: currentColor;
             flex-shrink: 0;
         }
@@ -185,26 +233,43 @@
             color: #3498db;
             background: rgba(52, 152, 219, 0.05);
         }
+
+        @media (max-width: 580px) {
+            h1 { font-size: 1.3rem; }
+            select, button { padding: 5px 8px; font-size: 0.75rem; }
+        }
     </style>
 </head>
 <body>
 
+    <!-- Top navigation bar -->
+    <div class="top-navbar">
+        <button id="homeBtn" class="btn-navbar">🏠 Home</button>
+        <a href="https://www.amazon.es/Words-Phrases-Emilio-L%C3%B3pez-Mart%C3%ADn/dp/B0HHF9CJ83/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3KKN3A706I9VX&dib=eyJ2IjoiMSJ9.Xq_mbfvzDDiIur47fbryiHhXD4HLYNvObthf4xiJtVAzX8vFCTVrb0Mbd0M73afNuYaXbLLnFwNHnMBxT7CEkToXADjHOYMvvFXGMQeRJGZP5xbq6yjL6DYE6x7muD_tTsbyIQfxzNLXSQ0gd9hxnNi7al7ubW8uXH2FQryGSIM3U3J4KLsYJQ_n8WMEmC7s.t_npDbI9QnszAxK7m_pigAUWgc7MH374MJhbVy8QD_o&dib_tag=se&keywords=Lost+Words+and+Phrases&qid=1788364246&s=books&sprefix=lost+words+and+phrases%2Cstripbooks%2C126&sr=1-1" target="_blank" class="btn-navbar book-nav">
+            📖 Paperback
+        </a>
+    </div>
+
     <header>
         <h1>Lost Words and Phrases</h1>
-        <p class="subtitle">Collection of traces and reflections</p>
     </header>
 
     <div class="viewer-section">
-        <div class="controls">
-            <button id="homeBtn">🏠 Home</button>
-            <select id="blockSelect"></select>
-            <button id="prevBtn">&larr; Previous</button>
-            <button id="nextBtn">Next &rarr;</button>
-            <button id="randomBtn">🎲 Random</button>
+        <!-- Clean controls -->
+        <div class="controls-wrapper">
+            <!-- Row 1: Block Selector -->
+            <div class="controls-row">
+                <select id="blockSelect" class="block-select"></select>
+            </div>
+            <!-- Row 2: Previous, Next and Random -->
+            <div class="controls-row">
+                <button id="prevBtn">&larr; Previous</button>
+                <button id="nextBtn">Next &rarr;</button>
+                <button id="randomBtn">🎲 Random</button>
+            </div>
+            <!-- Row 3: Action Buttons (Trace, Route) -->
+            <div class="controls-row" id="botonesAccionContainer"></div>
         </div>
-
-        <!-- Grouped interaction controls on top -->
-        <div id="botonesAccionContainer"></div>
 
         <div class="canvas-container">
             <div id="loading">Loading...</div>
@@ -272,6 +337,7 @@
             if (loadingElem) loadingElem.style.display = 'none';
 
             let activeBlock = sessionStorage.getItem('pyfp_en_block') || "1";
+            if (Number(activeBlock) > blockNamesEN.length) activeBlock = "1";
             if (blockSelect) blockSelect.value = activeBlock;
 
             filterByBlock(parseInt(activeBlock, 10), true);
@@ -500,9 +566,9 @@
         const x = canvas.width / 2;
         const y = canvas.height * 0.46;
 
-        let fontSize = Math.round(canvas.width * 0.038);
-        if (text.length > 150) fontSize = Math.round(canvas.width * 0.032);
-        if (text.length > 250) fontSize = Math.round(canvas.width * 0.027);
+        let fontSize = Math.round(canvas.width * 0.041);
+        if (text.length > 150) fontSize = Math.round(canvas.width * 0.035);
+        if (text.length > 250) fontSize = Math.round(canvas.width * 0.030);
 
         ctx.font = `400 ${fontSize}px 'Montserrat', sans-serif`;
 
@@ -540,7 +606,7 @@
         homeBtn = document.getElementById('homeBtn');
         huellaCounter = document.getElementById('huellaCounter');
         loadingElem = document.getElementById('loading');
-        botonesAccionContainer = document.getElementById('botonesAccionContext') || document.getElementById('botonesAccionContainer');
+        botonesAccionContainer = document.getElementById('botonesAccionContainer');
 
         populateSelect();
 
@@ -570,7 +636,7 @@
         if (nextBtn) {
             nextBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                if (currentIndex < currentFilteredFrases.length - 1) {
+                if (currentIndex < currentFilteredFrases.length - 1)  {
                     currentIndex++;
                     renderCurrentHuella();
                 }
@@ -585,6 +651,8 @@
                 const randomItem = allFrases[randomIndex];
                 const blockValue = Number(randomItem.bloque || randomItem.block);
                 
+                if (blockValue > blockNamesEN.length) return;
+
                 blockSelect.value = blockValue.toString();
                 currentFilteredFrases = allFrases.filter(f => Number(f.bloque || f.block) === blockValue);
                 currentIndex = currentFilteredFrases.findIndex(f => f.id === randomItem.id);
